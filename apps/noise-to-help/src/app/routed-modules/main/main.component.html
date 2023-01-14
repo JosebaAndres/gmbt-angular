@@ -1,0 +1,231 @@
+<app-view>
+  <app-paragraph-group>
+    <app-paragraph>
+      <app-important-text>Noise To Help</app-important-text> somos una asociación sin ánimo de lucro cuyo principal
+      objetivo es el de intentar conseguir diferentes recursos económicos y materiales con la única finalidad de
+      <app-important-text>ayudar</app-important-text> lo máximo posible a las familias más necesitadas.
+    </app-paragraph>
+    <app-paragraph>
+      Todo ello lo realizamos mediante la creación de diferentes eventos enfocados y centrados, en su gran mayoría, en
+      el ámbito de la <app-important-text>música rock</app-important-text> en todas sus diferentes variantes (metal,
+      hardcore, alternativo…) y cuyos beneficios irán donados íntegramente a fundaciones y organizaciones que harán
+      llegar dichos recursos a su destinatario final.
+    </app-paragraph>
+    <app-paragraph>
+      <a mat-raised-button color="accent" [routerLink]="'/about-us'">+ Info</a>
+    </app-paragraph>
+  </app-paragraph-group>
+  <app-paragraph-group>
+    <div>
+      <app-card
+        [title]="'Merchandising'"
+        [subtitle]="'Camiseta negra Noise To Help'"
+        [imagePath]="'./assets/images/main-t-shirt-noise-to-help.jpg'"
+      >
+        <app-paragraph>
+          Una importante vía para colaborar con nosotros es mediante el merchandising solidario de la asociación. Este
+          merchandising será realizado en su totalidad por la gente de
+          <app-external-link-text link="https://camisetas-ahora.com/">Camisetas Ahora</app-external-link-text> y
+          <app-external-link-text link="https://chicxsdelacalle.com/">Chicxs de la Calle</app-external-link-text>
+          desde Logroño (La Rioja) los cuales, aparte de hacer un trabajo increíble, colaboran con nosotros y nos echan
+          un cable con la realización y venta final del merchan.
+        </app-paragraph>
+        <app-paragraph>
+          <a mat-raised-button color="accent" [routerLink]="'/merchandising'">+ Info</a>
+        </app-paragraph>
+      </app-card>
+    </div>
+  </app-paragraph-group>
+  <app-paragraph-group>
+    <app-two-columns-layout>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Sorteo solidario de juegos de mesa'"
+            [subtitle]="'11-12/2022 - Logroño, Briones y RRSS'"
+            [imagePath]="'./assets/images/aventum-2022/aventum-2022-0.jpg'"
+          >
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="http://www.asociacionaventum.es/"
+                >Aventum Dinamización</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://www.gofundme.com/f/ayuda-ha-izan"
+                >Izan</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/aventum-2022'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Recogida solidaria de material humanitario (Ucrania)'"
+            [subtitle]="'12-15/09/2022 - Logroño y 16-17/09/2022 - Briones'"
+            [imagePath]="'./assets/images/briones-parties-2022/briones-parties-2022-0.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://ucraniaeuskadi.com/"
+                >Asociación Ucrania Euskadi</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/briones-parties-2022'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Torneo amateur solidario &#34;Pixel to Help&#34;'"
+            [subtitle]="'04/06/2022 - Local Pixelandgames - Logroño (La Rioja)'"
+            [imagePath]="'./assets/images/pixel-2022/pixel-2022-0.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://www.juegaterapia.org/"
+                >Juegaterapia</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/pixel-2022'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Encuentro de monociclistas &#34;Unirioja&#34;'"
+            [subtitle]="'04-05-06/03/2022 - Briones (La Rioja)'"
+            [imagePath]="'./assets/images/unirioja-2022/unirioja-2022-0.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://noisetohelp.org"
+                >Noise to Help</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/unirioja-2022'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Recogida solidaria de material humanitario'"
+            [subtitle]="'13-17/12/2021 - Logroño y 18-19/12/2021 - Briones'"
+            [imagePath]="'./assets/images/sos-refugiados-2021/sos-refugiados-2021-0.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://sosrefugiados.org/"
+                >SOS Refugiados</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/sos-refugiados-2021'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Sorteo manta de camisetas musicales recicladas'"
+            [subtitle]="'08-10/2021 - Briones, Logroño, Haro, Vitoria…'"
+            [imagePath]="'./assets/images/blanket-2021/blanket-2021.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="http://www.arfes.org/"
+                >Asociación de Salud Mental de la Rioja</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/blanket-2021'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Donación y recogida de zapatillas deportivas &quot;Los Meandros de Briones&quot;'"
+            [subtitle]="'04-05/2021 - Briones, Logroño, Haro y Arnedo (La Rioja)'"
+            [imagePath]="'./assets/images/meandros-2021/meandros-2021-0.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="http://losmeandrosdebriones.disfrutabriones.es/"
+                >Los Meandros de Briones</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://fundacionmozambiquesur.org/"
+                >Fundacion Mozambique sur</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/meandros-2021'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-card
+            [title]="'Donación y recogida solidaria'"
+            [subtitle]="'26-27/12/2020 - Casa de Cultura - Briones (La Rioja)'"
+            [imagePath]="'./assets/images/donate-toys-2020/donate-toys-2020.jpg'"
+          >
+            <app-paragraph>
+              <app-alert type="info">Finalizado</app-alert>
+            </app-paragraph>
+            <app-paragraph>Evento en apoyo a:</app-paragraph>
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://www.aaps.es"
+                >AAPS - Asociación de Apoyo al Pueblo Sirio</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-list-item-paragraph
+              ><app-external-link-text link="https://www.facebook.com/hospitalimaginario"
+                >Hospital Imaginario</app-external-link-text
+              ></app-list-item-paragraph
+            >
+            <app-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/donate-toys-2020'">+ Info</a>
+            </app-paragraph>
+          </app-card>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+    </app-two-columns-layout>
+  </app-paragraph-group>
+</app-view>

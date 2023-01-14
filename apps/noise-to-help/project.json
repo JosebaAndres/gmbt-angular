@@ -3,7 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/noise-to-help/src",
-  "prefix": "gmt-angular",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -39,7 +39,28 @@
           "fileReplacements": [
             {
               "replace": "apps/noise-to-help/src/environments/environment.ts",
-              "with": "apps/noise-to-help/src/environments/environment.prod.ts"
+              "with": "apps/noise-to-help/src/environments/environment.production.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "qa": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/noise-to-help/src/environments/environment.ts",
+              "with": "apps/noise-to-help/src/environments/environment.qa.ts"
             }
           ],
           "outputHashing": "all"
@@ -60,6 +81,9 @@
       "configurations": {
         "production": {
           "browserTarget": "noise-to-help:build:production"
+        },
+        "qa": {
+          "browserTarget": "noise-to-help:build:qa"
         },
         "development": {
           "browserTarget": "noise-to-help:build:development"

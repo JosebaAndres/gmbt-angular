@@ -1,0 +1,58 @@
+<mat-toolbar color="primary" class="mat-elevation-z6 app-navbar-primary">
+  <app-centered-layout class="app-navbar-primary__toolbar-container">
+    <div class="app-navbar-primary__toolbar-content">
+      <button mat-icon-button *ngIf="isPhone$ | async" (click)="toggleMenu()">
+        <mat-icon class="app-navbar-primary__icon" svgIcon="hamburger"></mat-icon>
+      </button>
+      <a mat-button class="app-navbar-primary__link-item app-navbar-primary__link-item--title-hack" routerLink="/main">
+        <div class="app-navbar-primary__title">
+          <img src="assets/images/logo-1-50.png" class="app-navbar-primary__title-img" />
+        </div>
+      </a>
+      <div class="app-navbar-primary__menu-item" *ngIf="isNotPhone$ | async">
+        <a
+          mat-button
+          class="app-navbar-primary__link-item"
+          *ngFor="let subMenuItem of subMenuDefaultItems$ | async"
+          [routerLink]="subMenuItem.routerLink"
+        >
+          <span>{{ subMenuItem.description }}</span>
+        </a>
+      </div>
+      <div class="app-navbar-primary__separator-item"></div>
+      <div class="app-navbar-primary__menu-item" *ngIf="isNotPhone$ | async">
+        <a
+          mat-stroked-button
+          class="app-navbar-primary__link-item app-navbar-primary__link-item--primary-button"
+          *ngFor="let subMenuItem of subMenuPrimaryItems$ | async"
+          [routerLink]="subMenuItem.routerLink"
+        >
+          <div class="app-navbar-primary__primary-button-content">
+            <span class="app-navbar-primary__primary-button-text">{{ subMenuItem.description }}</span>
+            <mat-icon class="app-navbar-primary__primary-button-icon" svgIcon="heart" [inline]="true"></mat-icon>
+          </div>
+        </a>
+      </div>
+      <div
+        class="app-navbar-primary__secondary-icons app-navbar-primary__secondary-icons--animated"
+        *ngIf="isPhone$ | async"
+        [@animatedIcons]="animatedIconsState$ | async"
+      >
+        <a class="app-navbar-primary__link-item" href="https://www.facebook.com/noisetohelp" target="_blank">
+          <mat-icon
+            class="app-navbar-primary__icon app-navbar-primary__icon--small"
+            svgIcon="facebook"
+            [inline]="true"
+          ></mat-icon>
+        </a>
+        <a class="app-navbar-primary__link-item" href="https://www.instagram.com/noisetohelp" target="_blank">
+          <mat-icon
+            class="app-navbar-primary__icon app-navbar-primary__icon--small"
+            svgIcon="instagram"
+            [inline]="true"
+          ></mat-icon>
+        </a>
+      </div>
+    </div>
+  </app-centered-layout>
+</mat-toolbar>

@@ -1,0 +1,59 @@
+// Custom Theming for Angular Material
+@use '~@angular/material' as mat;
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+$app-mat-primary-palette: (
+  100: $primary-100-color,
+  200: $primary-200-color,
+  500: $primary-500-color,
+  700: $primary-700-color,
+  // For slide toggle,
+  contrast:
+    (
+      100: $dark-primary-text,
+      500: $primary-500-color-contrast,
+      700: $light-primary-text,
+    ),
+);
+$app-mat-primary: mat.define-palette($app-mat-primary-palette);
+
+$app-mat-accent-palette: (
+  100: $accent-100-color,
+  200: $accent-200-color,
+  500: $accent-500-color,
+  700: $accent-700-color,
+  contrast: (
+    100: $dark-primary-text,
+    500: $light-primary-text,
+    700: $light-primary-text,
+  ),
+);
+$app-mat-accent: mat.define-palette($app-mat-accent-palette);
+
+$app-mat-warn-palette: (
+  100: $warn-100-color,
+  200: $warn-200-color,
+  500: $warn-500-color,
+  700: $warn-700-color,
+  contrast: (
+    100: $dark-primary-text,
+    500: $light-primary-text,
+    700: $light-primary-text,
+  ),
+);
+$app-mat-warn: mat.define-palette($app-mat-warn-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$app-mat-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $app-mat-primary,
+      accent: $app-mat-accent,
+      warn: $app-mat-warn,
+    ),
+  )
+);

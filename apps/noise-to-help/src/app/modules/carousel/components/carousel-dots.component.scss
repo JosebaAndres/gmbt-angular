@@ -1,0 +1,11 @@
+@import '../../../../assets/scss/settings/sizes.scss';
+@import '../../../../assets/scss/settings/colors.scss';
+@import '../../../../assets/scss/settings/margins.scss';
+
+.app-carousel-dots {
+  display: flex;
+}
+
+.app-carousel-dots__item {
+  cursor: pointer;
+}

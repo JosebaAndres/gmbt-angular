@@ -1,0 +1,59 @@
+<app-view>
+  <app-paragraph-group>
+    <app-paragraph>
+      <app-title-text>Recogida solidaria de material humanitario</app-title-text>
+    </app-paragraph>
+    <app-paragraph>
+      <app-subtitle-text>13-17/12/2021 - Logroño y 18-19/12/2021 - Briones</app-subtitle-text>
+    </app-paragraph>
+    <app-two-columns-layout>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-img [src]="'./assets/images/sos-refugiados-2021/sos-refugiados-2021-0.jpg'"></app-img>
+        </app-paragraph>
+        <app-paragraph>
+          <app-alert type="info">Finalizado</app-alert>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item></app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-img [src]="'./assets/images/sos-refugiados-2021/sos-refugiados-2021-1.jpg'"></app-img>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>Pale de material humanitario preparado.</app-paragraph>
+        <app-paragraph
+          >Pues así de vestido y elegante queda el palé que sacamos en la última recogida solidaria para la gente de
+          <app-external-link-text link="https://sosrefugiados.org/">SOS Refugiados</app-external-link-text>, es
+          increíble que hayamos alcanzado a realizar un palé completo!!!</app-paragraph
+        >
+        <app-paragraph
+          >Ya solo queda que vengan a por ello para enviarlo a Valencia y desde allí directo a Atenas. Os iremos
+          informando.
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph>
+          <app-carousel [itemsMaxWidth]="750" [itemsMaxHeight]="750">
+            <div *appCarouselItem>
+              <app-img [src]="'./assets/images/sos-refugiados-2021/sos-refugiados-2021-2.jpg'"></app-img>
+            </div>
+            <div *appCarouselItem>
+              <app-img [src]="'./assets/images/sos-refugiados-2021/sos-refugiados-2021-3.jpg'"></app-img>
+            </div>
+          </app-carousel>
+        </app-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <app-paragraph
+          >Muchísimas gracias a todos los que os pasasteis por Briones y Logroño a dejar vuestras
+          donaciones.</app-paragraph
+        >
+        <app-paragraph
+          ><app-encourage-text>Let's make some noise to help people - NTH</app-encourage-text></app-paragraph
+        >
+      </app-two-columns-layout-item>
+    </app-two-columns-layout>
+  </app-paragraph-group>
+</app-view>

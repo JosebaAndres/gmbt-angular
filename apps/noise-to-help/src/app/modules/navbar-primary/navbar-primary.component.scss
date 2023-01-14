@@ -1,0 +1,86 @@
+@import '../../../assets/scss/settings/sizes.scss';
+@import '../../../assets/scss/settings/colors.scss';
+@import '../../../assets/scss/settings/margins.scss';
+@import '../../../assets/scss/settings/transitions.scss';
+
+.app-navbar-primary__toolbar-container {
+  width: 100%;
+}
+
+.app-navbar-primary__toolbar-content {
+  display: flex;
+  width: 100%;
+  padding-right: 16px;
+  align-items: center;
+}
+
+.app-navbar-primary__link-item {
+  padding-left: $horizontal-margin-s;
+  padding-right: $horizontal-margin-s;
+  &--title-hack {
+    min-width: auto;
+  }
+  &--primary-button {
+    border-color: $primary-500-color-contrast;
+    &:hover {
+      background: $primary-500-color-contrast;
+      color: $primary-500-color;
+      transition: background $over-transition, color $over-transition;
+    }
+  }
+}
+
+.app-navbar-primary__title {
+  display: flex;
+  align-items: center;
+}
+
+.app-navbar-primary__title-img {
+  height: 50px;
+  object-fit: contain;
+  margin-right: $horizontal-margin-s;
+  display: block;
+}
+
+@media (max-width: $xs-max-size) {
+  .app-navbar-primary__title-img {
+    height: 40px;
+  }
+}
+
+.app-navbar-primary__separator-item {
+  flex: 1 1 auto;
+}
+
+.app-navbar-primary__primary-button-text {
+  padding-right: 8px;
+}
+
+.app-navbar-primary__primary-button-icon {
+  height: 1rem !important;
+  width: 1rem !important;
+}
+
+.app-navbar-primary__icon--small {
+  height: 1.2rem !important;
+  width: 1.2rem !important;
+}
+
+.app-navbar-primary__secondary-icons {
+  right: 24px;
+}
+
+.app-navbar-primary__secondary-icons--animated {
+  position: absolute;
+  top: -32px;
+}
+
+.app-navbar-primary {
+  height: 64px;
+}
+
+@media (max-width: $xs-max-size) {
+  .app-navbar-primary {
+    height: 56px;
+  }
+}

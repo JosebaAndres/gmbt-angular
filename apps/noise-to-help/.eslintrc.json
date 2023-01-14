@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "gmt-angular",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]

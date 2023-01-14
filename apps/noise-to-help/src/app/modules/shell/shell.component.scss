@@ -1,0 +1,109 @@
+@import '../../../assets/scss/settings/sizes.scss';
+@import '../../../assets/scss/settings/margins.scss';
+@import '../../../assets/scss/settings/colors.scss';
+@import '../../../assets/scss/settings/transitions.scss';
+
+.app-shell {
+  height: 100%;
+}
+
+.app-shell__content {
+  height: 100%;
+}
+
+.app-shell__sidenav-container {
+  height: 100%;
+}
+
+.app-shell__sidenav {
+  min-width: 260px;
+}
+
+.app-shell__sidenav-content-item {
+  display: block;
+  text-align: left;
+  &--primary {
+    border-radius: 0;
+    border-bottom-color: $primary-500-color-contrast;
+    border-top-color: $primary-500-color-contrast;
+    &:hover {
+      background: $primary-500-color-contrast;
+      color: $background-200-color;
+      transition: background $over-transition, color $over-transition;
+    }
+  }
+}
+
+.app-shell__main-content {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/assets/images/layout-margin.png');
+}
+
+.app-shell__main-content-content {
+  flex: 1 1 auto;
+}
+
+.app-shell__main-content-footer {
+  padding: 0 ($horizontal-margin-l - $horizontal-margin-m) ($vertical-margin-l - $vertical-margin-m)
+    ($horizontal-margin-l - $horizontal-margin-m);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $sm-max-size) {
+  .app-shell__main-content-footer {
+    padding: 0 ($horizontal-margin-m - $horizontal-margin-s) ($vertical-margin-m - $vertical-margin-s)
+      ($horizontal-margin-m - $horizontal-margin-s);
+  }
+}
+
+.app-shell__main-content-footer-item {
+  padding-left: $horizontal-margin-m;
+  padding-right: $horizontal-margin-m;
+  padding-bottom: $vertical-margin-m;
+}
+
+@media (max-width: $sm-max-size) {
+  .app-shell__main-content-footer-item {
+    padding-left: $horizontal-margin-s;
+    padding-right: $horizontal-margin-s;
+    padding-bottom: $vertical-margin-s;
+  }
+}
+
+.app-shell__primary-button-text {
+  padding-right: 8px;
+}
+
+.app-shell__primary-button-icon {
+  height: 1rem !important;
+  width: 1rem !important;
+}
+
+.app-shell__navbar-secondary {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+@media (max-width: $sm-max-size) {
+  .app-shell__navbar-secondary {
+    position: unset;
+    top: unset;
+    z-index: unset;
+  }
+}
+
+.app-shell__navbar-primary {
+  position: sticky;
+  top: 32px;
+  z-index: 100;
+}
+
+@media (max-width: $sm-max-size) {
+  .app-shell__navbar-primary {
+    top: 0;
+  }
+}

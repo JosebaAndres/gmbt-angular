@@ -1,0 +1,51 @@
+@import '../../../assets/scss/settings/sizes.scss';
+@import '../../../assets/scss/settings/colors.scss';
+@import '../../../assets/scss/settings/margins.scss';
+@import '../../../assets/scss/settings/transitions.scss';
+
+.app-navbar-secondary__toolbar-container {
+  width: 100%;
+}
+
+.app-navbar-secondary__toolbar-content {
+  display: flex;
+  width: 100%;
+  padding-right: 16px;
+  align-items: center;
+}
+
+.app-navbar-secondary__link-item {
+  padding-left: $horizontal-margin-s;
+  padding-right: $horizontal-margin-s;
+}
+
+.app-navbar-secondary__separator-item {
+  flex: 1 1 auto;
+}
+
+.app-navbar-secondary__slogan {
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.app-navbar-secondary__icon {
+  height: 1.2rem !important;
+  width: 1.2rem !important;
+}
+
+.app-navbar-secondary__secondary-icons {
+  right: 24px;
+}
+
+.app-navbar-secondary__secondary-hidden-icons {
+  width: 70.375px;
+  height: 32px;
+}
+
+.app-navbar-secondary {
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+}

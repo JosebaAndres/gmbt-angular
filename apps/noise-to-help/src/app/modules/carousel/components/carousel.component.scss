@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/settings/sizes.scss';
+@import '../../../../assets/scss/settings/colors.scss';
+@import '../../../../assets/scss/settings/margins.scss';
+
+.app-carousel {
+  position: relative;
+  user-select: none;
+}
+
+.app-carousel__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.app-carousel__content {
+  width: 6000px;
+  display: flex;
+}
+
+.app-carousel__previous-button {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translate(0%, -50%);
+}
+
+.app-carousel__next-button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translate(0%, -50%);
+}
+
+.app-carousel__dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 0;
+}
+
+.app-carousel__size-element {
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
