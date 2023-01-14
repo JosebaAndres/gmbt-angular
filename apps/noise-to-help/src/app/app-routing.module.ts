@@ -6,64 +6,40 @@ const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   {
     path: 'main',
-    loadChildren: () =>
-      import('./routed-modules/main/main.module').then((m) => m.MainModule),
+    loadChildren: () => import('./routed-modules/main/main.module').then((m) => m.MainModule),
   },
   {
     path: 'about-us',
-    loadChildren: () =>
-      import('./routed-modules/about-us/about-us.module').then(
-        (m) => m.AboutUsModule
-      ),
+    loadChildren: () => import('./routed-modules/about-us/about-us.module').then((m) => m.AboutUsModule),
   },
   {
     path: 'partners',
-    loadChildren: () =>
-      import('./routed-modules/partners/partners.module').then(
-        (m) => m.PartnersModule
-      ),
+    loadChildren: () => import('./routed-modules/partners/partners.module').then((m) => m.PartnersModule),
   },
   {
     path: 'events',
-    loadChildren: () =>
-      import('./routed-modules/events/events.module').then(
-        (m) => m.EventsModule
-      ),
+    loadChildren: () => import('./routed-modules/events/events.module').then((m) => m.EventsModule),
   },
   {
     path: 'contact',
-    loadChildren: () =>
-      import('./routed-modules/contact/contact.module').then(
-        (m) => m.ContactModule
-      ),
+    loadChildren: () => import('./routed-modules/contact/contact.module').then((m) => m.ContactModule),
   },
   {
     path: 'collaborate',
-    loadChildren: () =>
-      import('./routed-modules/collaborate/collaborate.module').then(
-        (m) => m.CollaborateModule
-      ),
+    loadChildren: () => import('./routed-modules/collaborate/collaborate.module').then((m) => m.CollaborateModule),
   },
   {
     path: 'merchandising',
     loadChildren: () =>
-      import('./routed-modules/merchandising/merchandising.module').then(
-        (m) => m.MerchandisingUsModule
-      ),
+      import('./routed-modules/merchandising/merchandising.module').then((m) => m.MerchandisingUsModule),
   },
   {
     path: 'questions',
-    loadChildren: () =>
-      import('./routed-modules/questions/questions.module').then(
-        (m) => m.QuestionsUsModule
-      ),
+    loadChildren: () => import('./routed-modules/questions/questions.module').then((m) => m.QuestionsUsModule),
   },
   {
     path: 'playground',
-    loadChildren: () =>
-      import('./routed-modules/playground/playground.module').then(
-        (m) => m.PlaygroundModule
-      ),
+    loadChildren: () => import('./routed-modules/playground/playground.module').then((m) => m.PlaygroundModule),
     canActivate: [PlaygroundGuard],
   },
   { path: '**', redirectTo: '/main' },

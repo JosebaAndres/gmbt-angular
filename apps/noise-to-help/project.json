@@ -15,10 +15,7 @@
         "polyfills": "apps/noise-to-help/src/polyfills.ts",
         "tsConfig": "apps/noise-to-help/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/noise-to-help/src/favicon.ico",
-          "apps/noise-to-help/src/assets"
-        ],
+        "assets": ["apps/noise-to-help/src/favicon.ico", "apps/noise-to-help/src/assets"],
         "styles": ["apps/noise-to-help/src/styles.scss"],
         "scripts": []
       },
@@ -100,10 +97,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/noise-to-help/**/*.ts",
-          "apps/noise-to-help/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/noise-to-help/**/*.ts", "apps/noise-to-help/**/*.html"]
       }
     },
     "test": {

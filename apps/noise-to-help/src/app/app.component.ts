@@ -1,8 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  HostListener,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 import { UiStoreFacade } from './stores/ui/ui-store-facade';
 
 @Component({

@@ -8,8 +8,9 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "format-fix": "pretty-quick --staged",
-    "precommit": "run-s format-fix lint",
+    "format:all": "prettier --write **/*.{ts,html,scss,json,js}",
+    "format:staged": "pretty-quick --staged",
+    "precommit": "run-s format:staged lint",
     "prepare": "husky install"
   },
   "private": true,
