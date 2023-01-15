@@ -1,0 +1,12 @@
+steps:
+  # Install node packages
+  - name: 'gcr.io/cloud-builders/npm:node-16.10.0'
+    args: ['install']
+
+  # Build productive files
+  - name: 'gcr.io/cloud-builders/npm:node-16.10.0'
+    args: ['run', 'build:development']
+
+  # Deploy to google cloud app egnine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', '--version=development']
