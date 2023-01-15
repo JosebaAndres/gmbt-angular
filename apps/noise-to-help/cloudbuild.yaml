@@ -11,4 +11,5 @@ steps:
 
   # Deploy to google cloud app egnine
   - name: 'gcr.io/cloud-builders/gcloud'
+    dir: apps/noise-to-help
     args: ['app', 'deploy', '--version=$_ENVIRONMENT']
