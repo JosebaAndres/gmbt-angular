@@ -1,4 +1,4 @@
-export class WomanSizeModel {
+export interface WomanSizeModel {
   description: string;
   s: number;
   m: number;

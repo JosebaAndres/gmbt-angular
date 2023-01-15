@@ -12,10 +12,8 @@ import { DeviceType } from '../../../app/models/device-type';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarSecondaryComponent implements OnInit {
-  isPhone$: Observable<boolean>;
-  isNotPhone$: Observable<boolean>;
-
-  @ViewChild('secondaryHiddenIcons', { static: true }) secondaryHiddenIcons: ElementRef<HTMLDivElement>;
+  isPhone$!: Observable<boolean>;
+  isNotPhone$!: Observable<boolean>;
 
   constructor(private uiStoreFacade: UiStoreFacade) {}
 

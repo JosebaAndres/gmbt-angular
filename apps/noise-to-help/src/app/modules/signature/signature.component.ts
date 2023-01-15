@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
@@ -8,15 +8,20 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
   styleUrls: ['./signature.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SignatureComponent {
-  @Input() imagePath: string;
+export class SignatureComponent implements OnChanges {
+  @Input() imagePath!: string;
+
+  resolvedImagePath!: SafeUrl;
 
   constructor(private domSanitizer: DomSanitizer) {}
 
-  getImagePath(): SafeUrl {
-    if (this.imagePath) {
-      return this.domSanitizer.bypassSecurityTrustUrl(this.imagePath);
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['imagePath']) {
+      this.resolveImagePath();
     }
-    return null;
+  }
+
+  resolveImagePath(): void {
+    this.resolvedImagePath = this.domSanitizer.bypassSecurityTrustUrl(this.imagePath);
   }
 }

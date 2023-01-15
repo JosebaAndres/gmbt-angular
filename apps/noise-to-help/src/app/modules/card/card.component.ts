@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
@@ -8,25 +8,39 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
   styleUrls: ['./card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CardComponent {
-  @Input() title: string;
-  @Input() subtitle: string;
-  @Input() imagePath: string;
-  @Input() avatarPath: string;
+export class CardComponent implements OnChanges {
+  @Input() title: string | undefined;
+  @Input() subtitle: string | undefined;
+  @Input() imagePath: string | undefined;
+  @Input() avatarPath: string | undefined;
+
+  resolvedImagePath: SafeUrl | undefined;
+  resolvedAvatarPath: SafeUrl | undefined;
 
   constructor(private domSanitizer: DomSanitizer) {}
 
-  getImagePath(): SafeUrl {
-    if (this.imagePath) {
-      return this.domSanitizer.bypassSecurityTrustUrl(this.imagePath);
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['imagePath']) {
+      this.resolveImagePath();
     }
-    return null;
+    if (changes['avatarPath']) {
+      this.resolveAvatarPath;
+    }
   }
 
-  getAvatarPath(): SafeUrl {
-    if (this.avatarPath) {
-      return this.domSanitizer.bypassSecurityTrustStyle(`url(${this.avatarPath})`);
+  private resolveImagePath(): void {
+    if (this.imagePath) {
+      this.resolvedImagePath = this.domSanitizer.bypassSecurityTrustUrl(this.imagePath);
+    } else {
+      this.resolvedImagePath = undefined;
     }
-    return null;
+  }
+
+  private resolveAvatarPath(): void {
+    if (this.avatarPath) {
+      this.resolvedAvatarPath = this.domSanitizer.bypassSecurityTrustStyle(`url(${this.avatarPath})`);
+    } else {
+      this.resolvedAvatarPath = undefined;
+    }
   }
 }

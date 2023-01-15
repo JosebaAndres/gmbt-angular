@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MenuItemModel } from '../../models/menu-item-model';
@@ -40,13 +40,11 @@ import { DeviceType } from '../../../app/models/device-type';
   ],
 })
 export class NavbarPrimaryComponent implements OnInit {
-  subMenuDefaultItems$: Observable<Array<MenuItemModel>>;
-  subMenuPrimaryItems$: Observable<Array<MenuItemModel>>;
-  isPhone$: Observable<boolean>;
-  isNotPhone$: Observable<boolean>;
-  animatedIconsState$: Observable<'primaryFirst' | 'primary' | 'secondary'>;
-
-  @ViewChild('secondaryHiddenIcons', { static: true }) secondaryHiddenIcons: ElementRef<HTMLDivElement>;
+  subMenuDefaultItems$!: Observable<Array<MenuItemModel>>;
+  subMenuPrimaryItems$!: Observable<Array<MenuItemModel>>;
+  isPhone$!: Observable<boolean>;
+  isNotPhone$!: Observable<boolean>;
+  animatedIconsState$!: Observable<'primaryFirst' | 'primary' | 'secondary'>;
 
   constructor(private uiStoreFacade: UiStoreFacade) {}
 

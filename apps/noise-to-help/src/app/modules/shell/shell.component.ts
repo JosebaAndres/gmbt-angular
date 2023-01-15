@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, ElementRef, OnDestroy, OnIn
 import { ViewChild } from '@angular/core';
 import { Component } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
-import { Observable, Subject } from 'rxjs';
+import { Observable, ReplaySubject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 import { DeviceType } from '../../../app/models/device-type';
 import { SignatureModel } from '../../../app/models/signature-model';
@@ -16,14 +16,14 @@ import { MenuItemModel } from '../../models/menu-item-model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShellComponent implements OnInit, OnDestroy {
-  private destroy$ = new Subject<any>();
-  private deviceType: DeviceType;
+  private destroy$ = new ReplaySubject<void>();
+  private deviceType: DeviceType | undefined;
 
   sidenavOpened = false;
-  subMenuItems$: Observable<Array<MenuItemModel>>;
-  signatures$: Observable<Array<SignatureModel>>;
+  subMenuItems$!: Observable<Array<MenuItemModel>>;
+  signatures$!: Observable<Array<SignatureModel>>;
 
-  @ViewChild('mainContent', { static: true, read: ElementRef }) mainContent: ElementRef<HTMLElement>;
+  @ViewChild('mainContent', { static: true, read: ElementRef }) mainContent!: ElementRef<HTMLElement>;
 
   constructor(
     private uiStoreFacade: UiStoreFacade,
@@ -71,12 +71,10 @@ export class ShellComponent implements OnInit, OnDestroy {
         }
       });
 
-    this.mainContent.nativeElement.addEventListener('scroll', () => {
-      this.uiStoreFacade.scrollTop(this.mainContent.nativeElement.scrollTop);
-    });
+    this.mainContent.nativeElement.addEventListener('scroll', this.mainContentScroll);
   }
 
-  onSidenavOpenedChange(value): void {
+  onSidenavOpenedChange(value: boolean): void {
     if (value) {
       this.uiStoreFacade.openMenu();
     } else {
@@ -89,6 +87,11 @@ export class ShellComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.destroy$.next({});
+    this.destroy$.next();
+    this.mainContent.nativeElement.removeEventListener('scroll', this.mainContentScroll);
   }
+
+  private mainContentScroll = () => {
+    this.uiStoreFacade.scrollTop(this.mainContent.nativeElement.scrollTop);
+  };
 }

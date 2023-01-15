@@ -8,21 +8,17 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmailLinkTextComponent implements OnChanges {
-  @Input() email: string;
+  @Input() email!: string;
 
-  resolvedHref: string;
+  resolvedHref!: string;
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes.email) {
+    if (changes['email']) {
       this.resolveHref();
     }
   }
 
   private resolveHref(): void {
-    if (this.email) {
-      this.resolvedHref = `mailto:${this.email}`;
-    } else {
-      this.resolveHref = null;
-    }
+    this.resolvedHref = `mailto:${this.email}`;
   }
 }

@@ -30,30 +30,30 @@ type CarouselPanStatus = 'undefined' | 'default' | 'pan';
   providers: [CarouselService],
 })
 export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
-  private carouselWidth = new BehaviorSubject<number>(null);
-  private carouselHeight = new BehaviorSubject<number>(null);
-  private contentWidth: number;
+  private carouselWidth = new BehaviorSubject<number | null>(null);
+  private carouselHeight = new BehaviorSubject<number | null>(null);
+  private contentWidth: number | undefined;
   private currentSlideIndex = 0;
   private slidesLength = 0;
   private panStatus: CarouselPanStatus = 'undefined';
-  private panStartX: number = undefined;
-  private panStartY: number = undefined;
+  private panStartX: number | undefined = undefined;
+  private panStartY: number | undefined = undefined;
   private panMovementX: number | undefined = undefined;
   private panVelocityX: number | undefined = undefined;
   private panLastTime: number | undefined = undefined;
   private panLastMovementX: number | undefined = undefined;
   private destroy$ = new ReplaySubject<void>();
 
-  @ViewChild('carouselContent', { static: true }) carouselContent: ElementRef<HTMLDivElement>;
-  @ViewChild('carousel', { static: true }) carousel: ElementRef<HTMLDivElement>;
+  @ViewChild('carouselContent', { static: true }) carouselContent!: ElementRef<HTMLDivElement>;
+  @ViewChild('carousel', { static: true }) carousel!: ElementRef<HTMLDivElement>;
 
   @Input()
-  itemsMaxWidth: number;
+  itemsMaxWidth!: number;
 
   @Input()
-  itemsMaxHeight: number;
+  itemsMaxHeight!: number;
 
-  @ContentChildren(CarouselItemDirective) items: QueryList<CarouselItemDirective>;
+  @ContentChildren(CarouselItemDirective) items!: QueryList<CarouselItemDirective>;
 
   carouselWidth$ = this.carouselWidth.asObservable();
   carouselHeight$ = this.carouselHeight.asObservable();
@@ -63,7 +63,10 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
   constructor(private carouselService: CarouselService, private builder: AnimationBuilder, private ngZone: NgZone) {}
 
   ngOnDestroy(): void {
-    this.carousel.nativeElement.removeAllListeners();
+    // TODO: check why is this if required...
+    if (this.carousel.nativeElement.removeAllListeners) {
+      this.carousel.nativeElement.removeAllListeners();
+    }
     this.destroy$.next();
   }
 
@@ -93,7 +96,7 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes.itemsMaxWidth && changes.itemsMaxHeight) {
+    if (changes['itemsMaxWidth'] && changes['itemsMaxHeight']) {
       this.refreshCarouselSize();
     }
   }
@@ -133,8 +136,8 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
     }
   };
 
-  handleMove = (event: TouchEvent | MouseEvent): void => {
-    if (this.panLastTime !== undefined) {
+  private handleMove = (event: TouchEvent | MouseEvent): void => {
+    if (this.panLastTime !== undefined && this.panStartY !== undefined && this.panStartX !== undefined) {
       if (this.panStatus === 'undefined' || this.panStatus === 'pan') {
         let panMovementY: number;
         if (this.isTouchEvent(event)) {
@@ -168,13 +171,13 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
       this.carousel.nativeElement.removeEventListener('mouseup', this.handleEnd, false);
       this.carousel.nativeElement.removeEventListener('mouseleave', this.handleEnd, false);
     }
-    if (this.panStatus === 'pan') {
+    if (this.panStatus === 'pan' && this.panVelocityX !== undefined && this.panMovementX !== undefined) {
       this.refreshPanVelocityX();
       const panVelocityX = this.panVelocityX;
       const movementXToApply = this.panMovementX;
       this.clearGesturesBehaviourValues();
 
-      const indexRealAbsDelta = Math.abs(movementXToApply) / this.carouselWidth.value;
+      const indexRealAbsDelta = Math.abs(movementXToApply) / (this.carouselWidth.value ?? 1);
       let indexWithSensitivityAbsDelta: number;
       if ((panVelocityX > 1 && movementXToApply > 0) || (panVelocityX < -1 && movementXToApply < 0)) {
         indexWithSensitivityAbsDelta = indexRealAbsDelta;
@@ -221,8 +224,9 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
     return event.clientY;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private isTouchEvent(event: any): event is TouchEvent {
-    if (event.touches) {
+    if (event?.['touches']) {
       return true;
     } else {
       return false;
@@ -243,13 +247,15 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
   }
 
   private refreshPanVelocityX(): void {
-    const now = Date.now();
-    const deltaTime = now - this.panLastTime;
-    if (deltaTime > PAN_COMPUTE_INTERVAL || this.panVelocityX === undefined) {
-      const deltaX = this.panMovementX - this.panLastMovementX;
-      this.panLastMovementX = this.panMovementX;
-      this.panLastTime = now;
-      this.panVelocityX = this.getVelocityX(deltaX, deltaTime);
+    if (this.panLastTime !== undefined) {
+      const now = Date.now();
+      const deltaTime = now - this.panLastTime;
+      if (deltaTime > PAN_COMPUTE_INTERVAL || this.panVelocityX === undefined) {
+        const deltaX = (this.panMovementX ?? 0) - (this.panLastMovementX ?? 0);
+        this.panLastMovementX = this.panMovementX;
+        this.panLastTime = now;
+        this.panVelocityX = this.getVelocityX(deltaX, deltaTime);
+      }
     }
   }
 
@@ -259,12 +265,12 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
 
   private clearGesturesBehaviourValues(): void {
     this.panStatus = 'undefined';
-    this.panStartX = undefined;
-    this.panStartY = undefined;
-    this.panMovementX = undefined;
+    this.panStartX = 0;
+    this.panStartY = 0;
+    this.panMovementX = 0;
     this.panVelocityX = undefined;
     this.panLastTime = undefined;
-    this.panLastMovementX = undefined;
+    this.panLastMovementX = 0;
   }
 
   private changeCurrentSlideIndex(currentSlideIndex: number): void {
@@ -288,14 +294,14 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
     let translateX = this.getTranslateX();
     if (translateX < 0) {
       translateX = 0;
-    } else if (translateX > this.carouselWidth.value * (this.slidesLength - 1)) {
+    } else if (this.carouselWidth.value !== null && translateX > this.carouselWidth.value * (this.slidesLength - 1)) {
       translateX = this.carouselWidth.value * (this.slidesLength - 1);
     }
     return `translateX(-${translateX}px)`;
   }
 
   private getTranslateX(): number {
-    let result = this.currentSlideIndex * this.carouselWidth.value;
+    let result = this.currentSlideIndex * (this.carouselWidth.value ?? 0);
     if (this.panMovementX) {
       result = result - this.panMovementX;
     }
@@ -315,12 +321,14 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnDestroy {
 
   private refreshCarouselSize(): void {
     if (this.contentWidth && this.itemsMaxWidth && this.itemsMaxHeight) {
+      let resolvedCarouselWidth: number;
       if (this.contentWidth > this.itemsMaxWidth) {
-        this.carouselWidth.next(this.itemsMaxWidth);
+        resolvedCarouselWidth = this.itemsMaxWidth;
       } else {
-        this.carouselWidth.next(this.contentWidth);
+        resolvedCarouselWidth = this.contentWidth;
       }
-      this.carouselHeight.next((this.carouselWidth.value * this.itemsMaxHeight) / this.itemsMaxWidth);
+      this.carouselWidth.next(resolvedCarouselWidth);
+      this.carouselHeight.next((resolvedCarouselWidth * this.itemsMaxHeight) / this.itemsMaxWidth);
       if (this.currentSlideIndex !== 0) {
         this.moveCarousel();
       }

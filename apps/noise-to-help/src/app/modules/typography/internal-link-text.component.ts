@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InternalLinkTextComponent {
-  @Input() link: string;
+  @Input() link!: string;
 }

@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DownloadLinkTextComponent {
-  @Input() link: string;
-  @Input() fileName: string;
+  @Input() link!: string;
+  @Input() fileName!: string;
 }

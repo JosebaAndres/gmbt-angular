@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImgComponent {
-  @Input() src: string;
+  @Input() src!: string;
 }

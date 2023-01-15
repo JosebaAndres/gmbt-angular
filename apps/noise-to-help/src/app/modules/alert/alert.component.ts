@@ -14,7 +14,7 @@ export class AlertComponent implements OnChanges {
   isInfo = false;
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes.type) {
+    if (changes['type']) {
       this.refreshType();
     }
   }
