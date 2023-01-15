@@ -19,4 +19,4 @@ handlers:
 
 # Skip any files not in the dist/apps/noise-to-help folder
 skip_files:
-  - ^(?!dist)
+  - ^(?!dist/apps)
