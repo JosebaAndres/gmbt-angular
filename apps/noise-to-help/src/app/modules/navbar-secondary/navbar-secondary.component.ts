@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';

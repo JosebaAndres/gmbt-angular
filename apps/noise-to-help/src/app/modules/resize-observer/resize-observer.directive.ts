@@ -2,6 +2,7 @@ import { Directive, ElementRef, EventEmitter, Output, OnDestroy, NgZone } from '
 
 @Directive({ selector: '[appResizeObserver]' })
 export class ResizeObserverDirective implements OnDestroy {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private entriesMap: WeakMap<object, any>;
   private resizeObserver: ResizeObserver;
 
