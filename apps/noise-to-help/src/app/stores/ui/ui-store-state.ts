@@ -43,6 +43,11 @@ export const SUB_MENU_ITEMS: Array<MenuItemModel> = [
     type: MenuItemModelType.default,
   },
   {
+    description: 'Contribuciones',
+    routerLink: '/contributions',
+    type: MenuItemModelType.default,
+  },
+  {
     description: 'FAQ',
     routerLink: '/questions',
     type: MenuItemModelType.default,

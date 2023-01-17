@@ -34,6 +34,11 @@ const routes: Routes = [
       import('./routed-modules/merchandising/merchandising.module').then((m) => m.MerchandisingUsModule),
   },
   {
+    path: 'contributions',
+    loadChildren: () =>
+      import('./routed-modules/contributions/contributions.module').then((m) => m.ContributionsModule),
+  },
+  {
     path: 'questions',
     loadChildren: () => import('./routed-modules/questions/questions.module').then((m) => m.QuestionsUsModule),
   },
