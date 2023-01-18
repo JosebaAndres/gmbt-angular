@@ -6,6 +6,8 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
+    "start:noise-to-help": "nx serve noise-to-help",
+    "start:components-documentation": "nx serve components-documentation",
     "build": "nx build",
     "build:development": "nx build --c=development",
     "build:qa": "nx build --c=qa",
