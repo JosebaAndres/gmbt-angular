@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "gmt-angular",
+  "npmScope": "gmbt-angular",
   "affected": {
     "defaultBase": "main"
   },
