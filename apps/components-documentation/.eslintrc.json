@@ -10,7 +10,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "gmbtAngular",
+            "prefix": "app",
             "style": "camelCase"
           }
         ],
@@ -18,7 +18,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "gmbt-angular",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]

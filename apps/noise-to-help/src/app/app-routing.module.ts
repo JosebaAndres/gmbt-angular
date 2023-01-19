@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PlaygroundGuard } from './services/playground-guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
   {
     path: 'main',
     loadChildren: () => import('./routed-modules/main/main.module').then((m) => m.MainModule),
@@ -47,7 +47,7 @@ const routes: Routes = [
     loadChildren: () => import('./routed-modules/playground/playground.module').then((m) => m.PlaygroundModule),
     canActivate: [PlaygroundGuard],
   },
-  { path: '**', redirectTo: '/main' },
+  { path: '**', redirectTo: 'main' },
 ];
 
 @NgModule({
