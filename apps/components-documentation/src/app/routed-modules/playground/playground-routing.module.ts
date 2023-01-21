@@ -16,6 +16,10 @@ const routes: Routes = [
         path: 'typography',
         loadChildren: () => import('./routed-modules/typography/typography.module').then((m) => m.TypographyModule),
       },
+      {
+        path: 'alert',
+        loadChildren: () => import('./routed-modules/alert/alert.module').then((m) => m.AlertModule),
+      },
       { path: '**', redirectTo: 'dashboard' },
     ],
   },
