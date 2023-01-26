@@ -13,6 +13,10 @@ const routes: Routes = [
         loadChildren: () => import('./routed-modules/dashboard/dashboard.module').then((m) => m.DashboardModule),
       },
       {
+        path: 'card',
+        loadChildren: () => import('./routed-modules/card/card.module').then((m) => m.CardModule),
+      },
+      {
         path: 'typography',
         loadChildren: () => import('./routed-modules/typography/typography.module').then((m) => m.TypographyModule),
       },
