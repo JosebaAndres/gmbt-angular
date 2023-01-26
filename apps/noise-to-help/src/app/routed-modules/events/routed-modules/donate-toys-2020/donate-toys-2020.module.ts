@@ -7,7 +7,7 @@ import { TypographyModule } from '../../../../modules/typography/typography.modu
 import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
 import { CarouselModule } from '../../../../modules/carousel/carousel.module';
-import { AlertModule } from '../../../../modules/alert/alert.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [DonateToys2020Component],
@@ -19,7 +19,7 @@ import { AlertModule } from '../../../../modules/alert/alert.module';
     TwoColumnsLayoutModule,
     ImgModule,
     CarouselModule,
-    AlertModule,
+    GmbtAlertModule,
   ],
   exports: [DonateToys2020Component],
 })

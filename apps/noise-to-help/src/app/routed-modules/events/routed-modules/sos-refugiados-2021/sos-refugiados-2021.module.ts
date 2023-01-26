@@ -6,8 +6,8 @@ import { SosRefugiados2021RoutingModule } from './sos-refugiados-2021-routing.mo
 import { TypographyModule } from '../../../../modules/typography/typography.module';
 import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { AlertModule } from '../../../../modules/alert/alert.module';
 import { CarouselModule } from '../../../../modules/carousel/carousel.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [SosRefugiados2021Component],
@@ -18,7 +18,7 @@ import { CarouselModule } from '../../../../modules/carousel/carousel.module';
     TypographyModule,
     TwoColumnsLayoutModule,
     ImgModule,
-    AlertModule,
+    GmbtAlertModule,
     CarouselModule,
   ],
   exports: [SosRefugiados2021Component],

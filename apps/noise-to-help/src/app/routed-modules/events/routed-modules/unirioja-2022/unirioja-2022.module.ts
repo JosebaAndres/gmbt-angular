@@ -6,7 +6,7 @@ import { Unirioja2022RoutingModule } from './unirioja-2022-routing.module';
 import { TypographyModule } from '../../../../modules/typography/typography.module';
 import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { AlertModule } from '../../../../modules/alert/alert.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [Unirioja2022Component],
@@ -17,7 +17,7 @@ import { AlertModule } from '../../../../modules/alert/alert.module';
     TypographyModule,
     TwoColumnsLayoutModule,
     ImgModule,
-    AlertModule,
+    GmbtAlertModule,
   ],
   exports: [Unirioja2022Component],
 })

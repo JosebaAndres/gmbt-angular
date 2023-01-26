@@ -6,8 +6,8 @@ import { Pixel2022RoutingModule } from './pixel-2022-routing.module';
 import { TypographyModule } from '../../../../modules/typography/typography.module';
 import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { AlertModule } from '../../../../modules/alert/alert.module';
 import { CarouselModule } from '../../../../modules/carousel/carousel.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [Pixel2022Component],
@@ -18,7 +18,7 @@ import { CarouselModule } from '../../../../modules/carousel/carousel.module';
     TypographyModule,
     TwoColumnsLayoutModule,
     ImgModule,
-    AlertModule,
+    GmbtAlertModule,
     CarouselModule,
   ],
   exports: [Pixel2022Component],

@@ -9,7 +9,7 @@ import { ImgModule } from '../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../modules/two-columns-layout/two-columns-layout.module';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
-import { AlertModule } from '../../modules/alert/alert.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [MainComponent],
@@ -23,7 +23,7 @@ import { AlertModule } from '../../modules/alert/alert.module';
     TwoColumnsLayoutModule,
     MatButtonModule,
     RouterModule,
-    AlertModule,
+    GmbtAlertModule,
   ],
   exports: [MainComponent],
 })

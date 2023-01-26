@@ -8,7 +8,7 @@ import { TypographyModule } from '../../../../modules/typography/typography.modu
 import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
 import { MatButtonModule } from '@angular/material/button';
-import { AlertModule } from '../../../../modules/alert/alert.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [EventsComponent],
@@ -21,7 +21,7 @@ import { AlertModule } from '../../../../modules/alert/alert.module';
     ImgModule,
     TwoColumnsLayoutModule,
     MatButtonModule,
-    AlertModule,
+    GmbtAlertModule,
   ],
   exports: [EventsComponent],
 })

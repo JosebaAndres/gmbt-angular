@@ -6,7 +6,7 @@ import { Aventum2022RoutingModule } from './aventum-2022-routing.module';
 import { TypographyModule } from '../../../../modules/typography/typography.module';
 import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { AlertModule } from '../../../../modules/alert/alert.module';
+import { GmbtAlertModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [Aventum2022Component],
@@ -17,7 +17,7 @@ import { AlertModule } from '../../../../modules/alert/alert.module';
     TypographyModule,
     TwoColumnsLayoutModule,
     ImgModule,
-    AlertModule,
+    GmbtAlertModule,
   ],
   exports: [Aventum2022Component],
 })
