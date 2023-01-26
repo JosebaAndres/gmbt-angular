@@ -4,11 +4,11 @@ import { ViewModule } from '../../modules/view/view.module';
 import { PartnersComponent } from './partners.component';
 import { PartnersRoutingModule } from './partners-routing.module';
 import { RouterModule } from '@angular/router';
-import { TypographyModule } from '../../modules/typography/typography.module';
+import { GmbtTypographyModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [PartnersComponent],
-  imports: [CommonModule, PartnersRoutingModule, ViewModule, RouterModule, TypographyModule],
+  imports: [CommonModule, PartnersRoutingModule, ViewModule, RouterModule, GmbtTypographyModule],
   exports: [PartnersComponent],
 })
 export class PartnersModule {}

@@ -3,11 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ViewModule } from '../../../../modules/view/view.module';
 import { Meandros2021Component } from './meandros-2021.component';
 import { Meandros2021RoutingModule } from './meandros-2021-routing.module';
-import { TypographyModule } from '../../../../modules/typography/typography.module';
-import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { CarouselModule } from '../../../../modules/carousel/carousel.module';
-import { GmbtAlertModule } from '@gmbt-angular/components';
+import { GmbtAlertModule, GmbtCarouselModule, GmbtImgModule, GmbtTypographyModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [Meandros2021Component],
@@ -15,11 +12,11 @@ import { GmbtAlertModule } from '@gmbt-angular/components';
     CommonModule,
     Meandros2021RoutingModule,
     ViewModule,
-    TypographyModule,
+    GmbtTypographyModule,
     TwoColumnsLayoutModule,
-    ImgModule,
+    GmbtImgModule,
     GmbtAlertModule,
-    CarouselModule,
+    GmbtCarouselModule,
   ],
   exports: [Meandros2021Component],
 })

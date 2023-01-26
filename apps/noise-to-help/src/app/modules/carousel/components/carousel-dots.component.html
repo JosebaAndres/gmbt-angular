@@ -1,8 +1,0 @@
-<div class="app-carousel-dots">
-  <app-carousel-dot
-    class="app-carousel-dots__item"
-    *ngFor="let slide of slides$ | async; let i = index"
-    [isSelected]="slide.isSelected"
-    (click)="goToSlide(i)"
-  ></app-carousel-dot>
-</div>

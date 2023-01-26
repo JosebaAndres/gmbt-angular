@@ -3,11 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ViewModule } from '../../../../modules/view/view.module';
 import { DonateToys2020Component } from './donate-toys-2020.component';
 import { DonateToys2020RoutingModule } from './donate-toys-2020-routing.module';
-import { TypographyModule } from '../../../../modules/typography/typography.module';
-import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { CarouselModule } from '../../../../modules/carousel/carousel.module';
-import { GmbtAlertModule } from '@gmbt-angular/components';
+import { GmbtAlertModule, GmbtCarouselModule, GmbtImgModule, GmbtTypographyModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [DonateToys2020Component],
@@ -15,10 +12,10 @@ import { GmbtAlertModule } from '@gmbt-angular/components';
     CommonModule,
     DonateToys2020RoutingModule,
     ViewModule,
-    TypographyModule,
+    GmbtTypographyModule,
     TwoColumnsLayoutModule,
-    ImgModule,
-    CarouselModule,
+    GmbtImgModule,
+    GmbtCarouselModule,
     GmbtAlertModule,
   ],
   exports: [DonateToys2020Component],

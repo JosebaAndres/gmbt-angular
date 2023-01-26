@@ -1,0 +1,8 @@
+<div class="gmbt-carousel-dots">
+  <gmbt-carousel-dot
+    class="gmbt-carousel-dots__item"
+    *ngFor="let slide of slides$ | async; let i = index"
+    [isSelected]="slide.isSelected"
+    (click)="goToSlide(i)"
+  ></gmbt-carousel-dot>
+</div>

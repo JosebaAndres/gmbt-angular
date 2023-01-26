@@ -4,11 +4,11 @@ import { ViewModule } from '../../modules/view/view.module';
 import { ContributionsComponent } from './contributions.component';
 import { ContributionsRoutingModule } from './contributions-routing.module';
 import { RouterModule } from '@angular/router';
-import { TypographyModule } from '../../modules/typography/typography.module';
+import { GmbtTypographyModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [ContributionsComponent],
-  imports: [CommonModule, ContributionsRoutingModule, ViewModule, RouterModule, TypographyModule],
+  imports: [CommonModule, ContributionsRoutingModule, ViewModule, RouterModule, GmbtTypographyModule],
   exports: [ContributionsComponent],
 })
 export class ContributionsModule {}

@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/settings/sizes.scss';
+@import '../../../../assets/scss/settings/colors.scss';
+@import '../../../../assets/scss/settings/margins.scss';
+
+.gmbt-carousel {
+  position: relative;
+  user-select: none;
+}
+
+.gmbt-carousel__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.gmbt-carousel__content {
+  width: 6000px;
+  display: flex;
+}
+
+.gmbt-carousel__previous-button {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translate(0%, -50%);
+}
+
+.gmbt-carousel__next-button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translate(0%, -50%);
+}
+
+.gmbt-carousel__dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 0;
+}
+
+.gmbt-carousel__size-element {
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}

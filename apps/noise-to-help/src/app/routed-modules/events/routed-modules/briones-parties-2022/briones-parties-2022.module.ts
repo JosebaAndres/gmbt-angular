@@ -3,10 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ViewModule } from '../../../../modules/view/view.module';
 import { BrionesParties2022Component } from './briones-parties-2022.component';
 import { BrionesParties2022RoutingModule } from './briones-parties-2022-routing.module';
-import { TypographyModule } from '../../../../modules/typography/typography.module';
-import { ImgModule } from '../../../../modules/img/img.module';
 import { TwoColumnsLayoutModule } from '../../../../modules/two-columns-layout/two-columns-layout.module';
-import { GmbtAlertModule } from '@gmbt-angular/components';
+import { GmbtAlertModule, GmbtImgModule, GmbtTypographyModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [BrionesParties2022Component],
@@ -14,9 +12,9 @@ import { GmbtAlertModule } from '@gmbt-angular/components';
     CommonModule,
     BrionesParties2022RoutingModule,
     ViewModule,
-    TypographyModule,
+    GmbtTypographyModule,
     TwoColumnsLayoutModule,
-    ImgModule,
+    GmbtImgModule,
     GmbtAlertModule,
   ],
   exports: [BrionesParties2022Component],

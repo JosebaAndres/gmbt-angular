@@ -1,186 +1,190 @@
 <app-view>
-  <app-paragraph-group>
-    <app-paragraph>
-      <app-title-text>Sorteo manta de camisetas musicales recicladas</app-title-text>
-    </app-paragraph>
-    <app-paragraph>
-      <app-subtitle-text>08-10/2021 - Briones, Logroño, Haro, Vitoria…</app-subtitle-text>
-    </app-paragraph>
+  <gmbt-paragraph-group>
+    <gmbt-paragraph>
+      <gmbt-title-text>Sorteo manta de camisetas musicales recicladas</gmbt-title-text>
+    </gmbt-paragraph>
+    <gmbt-paragraph>
+      <gmbt-subtitle-text>08-10/2021 - Briones, Logroño, Haro, Vitoria…</gmbt-subtitle-text>
+    </gmbt-paragraph>
     <app-two-columns-layout>
       <app-two-columns-layout-item>
-        <app-paragraph>
-          <app-img [src]="'./assets/images/blanket-2021/blanket-2021.jpg'"></app-img>
-        </app-paragraph>
-        <app-paragraph>
+        <gmbt-paragraph>
+          <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021.jpg'"></gmbt-img>
+        </gmbt-paragraph>
+        <gmbt-paragraph>
           <gmbt-alert type="info">Finalizado</gmbt-alert>
-        </app-paragraph>
+        </gmbt-paragraph>
       </app-two-columns-layout-item>
       <app-two-columns-layout-item>
-        <app-paragraph>
-          <app-img [src]="'./assets/images/blanket-2021/blanket-2021-8.jpg'"></app-img>
-        </app-paragraph>
-        <app-paragraph
+        <gmbt-paragraph>
+          <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-8.jpg'"></gmbt-img>
+        </gmbt-paragraph>
+        <gmbt-paragraph
           >Estamos orgullosísimos de informaros de que el sorteo solidario de la manta de camisetas musicales recicladas
-          ha concluido con una recaudación final de <app-important-text>1.722€</app-important-text>. Ha sido increíble y
-          ha superado nuestras expectativas a todos los niveles.</app-paragraph
+          ha concluido con una recaudación final de <gmbt-important-text>1.722€</gmbt-important-text>. Ha sido increíble
+          y ha superado nuestras expectativas a todos los niveles.</gmbt-paragraph
         >
-        <app-paragraph
+        <gmbt-paragraph
           >Desde aquí queremos dar las gracias a toda la gente que se ha preocupado por esta actividad, que ha comprado
           boletos y que nos sigue apoyando. Muchas gracias también a todos los establecimientos que han aparcado un
           taquito por su local, a los medios que nos han llamado y, en especial, a la gente de la
-          <app-external-link-text link="http://www.arfes.org/"
-            >Asociación de Salud Mental de la Rioja</app-external-link-text
+          <gmbt-external-link-text link="http://www.arfes.org/"
+            >Asociación de Salud Mental de la Rioja</gmbt-external-link-text
           >
           (Confederación Salud Mental España) que sigue trabajando duramente en el ámbito de la salud
-          mental.</app-paragraph
+          mental.</gmbt-paragraph
         >
       </app-two-columns-layout-item>
       <app-two-columns-layout-item>
-        <app-paragraph>
-          <app-carousel [itemsMaxWidth]="600" [itemsMaxHeight]="600">
-            <div *appCarouselItem>
-              <app-img [src]="'./assets/images/blanket-2021/blanket-2021-1.jpg'"></app-img>
+        <gmbt-paragraph>
+          <gmbt-carousel [itemsMaxWidth]="600" [itemsMaxHeight]="600">
+            <div *gmbtCarouselItem>
+              <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-1.jpg'"></gmbt-img>
             </div>
-            <div *appCarouselItem>
-              <app-img [src]="'./assets/images/blanket-2021/blanket-2021-2.jpg'"></app-img>
+            <div *gmbtCarouselItem>
+              <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-2.jpg'"></gmbt-img>
             </div>
-            <div *appCarouselItem>
-              <app-img [src]="'./assets/images/blanket-2021/blanket-2021-3.jpg'"></app-img>
+            <div *gmbtCarouselItem>
+              <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-3.jpg'"></gmbt-img>
             </div>
-            <div *appCarouselItem>
-              <app-img [src]="'./assets/images/blanket-2021/blanket-2021-4.jpg'"></app-img>
+            <div *gmbtCarouselItem>
+              <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-4.jpg'"></gmbt-img>
             </div>
-            <div *appCarouselItem>
-              <app-img [src]="'./assets/images/blanket-2021/blanket-2021-5.jpg'"></app-img>
+            <div *gmbtCarouselItem>
+              <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-5.jpg'"></gmbt-img>
             </div>
-          </app-carousel>
-        </app-paragraph>
+          </gmbt-carousel>
+        </gmbt-paragraph>
       </app-two-columns-layout-item>
     </app-two-columns-layout>
-    <app-paragraph
+    <gmbt-paragraph
       >La gente de
-      <app-external-link-text link="https://www.facebook.com/EvaincCuzcumetalFest">EVA inc</app-external-link-text>
+      <gmbt-external-link-text link="https://www.facebook.com/EvaincCuzcumetalFest">EVA inc</gmbt-external-link-text>
       nos entregó unas cuantas camisetas musicales usadas con el objetivo de echarnos un cable para realizar una
       actividad solidaria original. Tras todo ello nos pusimos manos a la obra para realizar una manta reciclada con
       dichas camisetas y acompañarla de materiales nuevos para hacer un trabajo de calidad, resistente y duradero… ¡y
-      aquí la tenéis!</app-paragraph
+      aquí la tenéis!</gmbt-paragraph
     >
-    <app-paragraph>Las características generales de la manta son:</app-paragraph>
-    <app-list-item-paragraph>Dimensiones totales: 1,35 x 1,70 m.</app-list-item-paragraph>
-    <app-list-item-paragraph>Motivos principales: camisetas musicales usadas</app-list-item-paragraph>
-    <app-list-item-paragraph>Motivo tela posterior: calaveras B/N</app-list-item-paragraph>
-    <app-list-item-paragraph>Bies: azul oscuro</app-list-item-paragraph>
-    <app-list-item-paragraph>Hilos: negro y azul</app-list-item-paragraph>
-    <app-list-item-paragraph>Relleno</app-list-item-paragraph>
-    <app-list-item-paragraph>Apresto en spray</app-list-item-paragraph>
-    <app-list-item-paragraph>Entretela negra</app-list-item-paragraph>
-    <app-paragraph>El proceso de elaboración ha sido el siguiente:</app-paragraph>
-    <app-list-item-paragraph
-      >Seleccionar los dibujos de las camisetas y hacer una composición armoniosa</app-list-item-paragraph
+    <gmbt-paragraph>Las características generales de la manta son:</gmbt-paragraph>
+    <gmbt-list-item-paragraph>Dimensiones totales: 1,35 x 1,70 m.</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Motivos principales: camisetas musicales usadas</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Motivo tela posterior: calaveras B/N</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Bies: azul oscuro</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Hilos: negro y azul</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Relleno</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Apresto en spray</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Entretela negra</gmbt-list-item-paragraph>
+    <gmbt-paragraph>El proceso de elaboración ha sido el siguiente:</gmbt-paragraph>
+    <gmbt-list-item-paragraph
+      >Seleccionar los dibujos de las camisetas y hacer una composición armoniosa</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph>Recortar los dibujos y adecuarlos al tamaño de la manta</app-list-item-paragraph>
-    <app-list-item-paragraph>Rociar un poco de apresto y planchar para que no queden arrugas</app-list-item-paragraph>
-    <app-list-item-paragraph>Planchar seguidamente la entretela negra</app-list-item-paragraph>
-    <app-list-item-paragraph
-      >Unirlas con un hilván unas a otras para formar la composición y el tamaño adecuado</app-list-item-paragraph
+    <gmbt-list-item-paragraph>Recortar los dibujos y adecuarlos al tamaño de la manta</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Rociar un poco de apresto y planchar para que no queden arrugas</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph>Planchar seguidamente la entretela negra</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph
+      >Unirlas con un hilván unas a otras para formar la composición y el tamaño adecuado</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph>Coser a máquina todas las piezas y suplir los huecos que faltan</app-list-item-paragraph>
-    <app-list-item-paragraph>Se coloca el relleno por el revés y se une bien con las camisetas</app-list-item-paragraph>
-    <app-list-item-paragraph
+    <gmbt-list-item-paragraph>Coser a máquina todas las piezas y suplir los huecos que faltan</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph
+      >Se coloca el relleno por el revés y se une bien con las camisetas</gmbt-list-item-paragraph
+    >
+    <gmbt-list-item-paragraph
       >Seguidamente se coloca del otro lado del relleno la tela de las calaveras y se cose
-      alrededor</app-list-item-paragraph
+      alrededor</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph>¡Todo esto sin parar de medir para que cuadre! ;)</app-list-item-paragraph>
-    <app-list-item-paragraph
+    <gmbt-list-item-paragraph>¡Todo esto sin parar de medir para que cuadre! ;)</gmbt-list-item-paragraph>
+    <gmbt-list-item-paragraph
       >Por último se pone alrededor de la manta el bies azul, el cual ha habido que planchar para que diese la medida
-      adecuada</app-list-item-paragraph
+      adecuada</gmbt-list-item-paragraph
     >
-    <app-paragraph>Por otra parte una pequeña historia de cada cami:</app-paragraph>
-    <app-list-item-paragraph
-      ><app-encourage-text>SATYRICON: </app-encourage-text> “la compré cuando tendría unos 18 años, más o menos cuando
+    <gmbt-paragraph>Por otra parte una pequeña historia de cada cami:</gmbt-paragraph>
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>SATYRICON: </gmbt-encourage-text> “la compré cuando tendría unos 18 años, más o menos cuando
       salió el álbum de Rebel Extravaganza. Yo ya llevaba tiempo escuchando música del estilo, pero no conocía mucha
       gente en el pueblo con el mismo gusto musical, y fue por esa época cuando coincidí, jugando al fútbol, en unos de
       esos campeonatos de verano, con la gente de Briones... El mundo se abría ante mí, comencé entonces a trabajar,
       tenía dinero y edad para experimentar, y pasados unos años una canción de Ataxia.F, llamada Profecía, culminaba
-      todas esas vivencias”</app-list-item-paragraph
+      todas esas vivencias”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>BEHEMOTH: </app-encourage-text> “rememora tiempos en los que me iba a Barcelona por temas
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>BEHEMOTH: </gmbt-encourage-text> “rememora tiempos en los que me iba a Barcelona por temas
       familiares y me perdía solo, por la calle Tallers y otras aledañas, en tiendas de música, había una seguida de
       otra, lugares, casi extinto… repletos de música donde me evadía y no me sentía extraño. Esa cami me recuerda
       también a Asturies, una excursión con amigos en un momento de transición. Me lleva a tiempos de cambio, de cierto
-      caos en mi vida, pero a la vez intensos”</app-list-item-paragraph
+      caos en mi vida, pero a la vez intensos”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>OMENDARK: </app-encourage-text> “banda de Barakaldo de Black pagan que empezaron a la vez que
-      nosotros y nos hicimos muy íntimos. La cami es de un concierto que dimos con ellos y con los Butronian allá por el
-      2008 un solsticio de verano”</app-list-item-paragraph
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>OMENDARK: </gmbt-encourage-text> “banda de Barakaldo de Black pagan que empezaron a la vez
+      que nosotros y nos hicimos muy íntimos. La cami es de un concierto que dimos con ellos y con los Butronian allá
+      por el 2008 un solsticio de verano”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>SLIPKNOT: </app-encourage-text> “la cami la pillé en el concierto que dio Slipknot en la
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>SLIPKNOT: </gmbt-encourage-text> “la cami la pillé en el concierto que dio Slipknot en la
       Aqualung de Madrid por el 2004, presentando el Vol.3 y viéndoles por primera vez en una sala enana. Increíbles,
       estaba flipando de que esa peña fuera “de verdad”. Nos perdimos a los XXL que estaban de teloneros… es lo que
-      tiene un viaje de ida y vuelta entre semana a Madrid :) ”</app-list-item-paragraph
+      tiene un viaje de ida y vuelta entre semana a Madrid :) ”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>A.N.I.M.A.L.: </app-encourage-text> “es de una gira reciente que hicieron por aquí y que cogí
-      en Bilbao. La primera vez que los veía desde que los escuché por primera vez cuando me pasaron el CD de Poder
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>A.N.I.M.A.L.: </gmbt-encourage-text> “es de una gira reciente que hicieron por aquí y que
+      cogí en Bilbao. La primera vez que los veía desde que los escuché por primera vez cuando me pasaron el CD de Poder
       Latino allá por los primeros 2000. Siempre me han molado bastante estos argentinos… buena música y buenas letras.
       Cuando se volvieron a juntar esperé a que cayeran por aquí para no perdérmelos, lástima no haberlos visto al
-      principio de sus días”</app-list-item-paragraph
+      principio de sus días”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>SEX PISTOLS: </app-encourage-text> “pues tenía unos 15 años o así cuando la compré en una
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>SEX PISTOLS: </gmbt-encourage-text> “pues tenía unos 15 años o así cuando la compré en una
       tienda. Me acababan de copiar en cinta su único disco y entre la música y la iconografía me ganaron bien
-      pronto”</app-list-item-paragraph
+      pronto”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>AGONICA: </app-encourage-text>“grupo de death metal melódico gallego de Vigo la gane en un
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>AGONICA: </gmbt-encourage-text>“grupo de death metal melódico gallego de Vigo la gane en un
       sorteo de Facebook y ahí fue cuando realmente empecé a escucharlos y descubrir el pedazo grupazo que
-      es”</app-list-item-paragraph
+      es”</gmbt-list-item-paragraph
     >
-    <app-list-item-paragraph
-      ><app-encourage-text>ENTOMBED: </app-encourage-text>“la heredé de mi hermano, son un grupazo mítico en la escena
+    <gmbt-list-item-paragraph
+      ><gmbt-encourage-text>ENTOMBED: </gmbt-encourage-text>“la heredé de mi hermano, son un grupazo mítico en la escena
       death metal a los que he tenido el gusto de ver en directo varias veces tanto como entombed como después que
       pasaron a llamarse entombed ad Este mismo año murió su cantante Lars Göran Petrov a los 49 años de edad a causa
-      del p*** cáncer”</app-list-item-paragraph
+      del p*** cáncer”</gmbt-list-item-paragraph
     >
-    <app-paragraph>
-      <app-img [src]="'./assets/images/blanket-2021/blanket-2021-6.jpg'"></app-img>
-    </app-paragraph>
-    <app-paragraph
+    <gmbt-paragraph>
+      <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-6.jpg'"></gmbt-img>
+    </gmbt-paragraph>
+    <gmbt-paragraph
       >Para apoyar este trabajo decidimos hacer un sorteo “clásico” con venta de boletos físicos a 2€ por unidad. Estos
       boletos los vendimos personalmente los integrantes de la asociación y dejamos tacos en diferentes establecimientos
-      (Logroño, Briones, Haro, Vitoria...).</app-paragraph
+      (Logroño, Briones, Haro, Vitoria...).</gmbt-paragraph
     >
-    <app-paragraph
+    <gmbt-paragraph
       >Para esta actividad quisimos colaborar con personas que estén trabajando en el ámbito de la salud mental;
       concepto al que debemos de dar más importancia y visibilidad. Es por ello que nos pusimos en contacto con la gente
       de la
-      <app-external-link-text link="http://www.arfes.org/"
-        >Asociación de Salud Mental de la Rioja</app-external-link-text
+      <gmbt-external-link-text link="http://www.arfes.org/"
+        >Asociación de Salud Mental de la Rioja</gmbt-external-link-text
       >
       (entidad miembro de la
-      <app-external-link-text link="https://consaludmental.org/"
-        >Confederación Salud Mental España</app-external-link-text
-      >) y nos explicaron su trabajo.</app-paragraph
+      <gmbt-external-link-text link="https://consaludmental.org/"
+        >Confederación Salud Mental España</gmbt-external-link-text
+      >) y nos explicaron su trabajo.</gmbt-paragraph
     >
-    <app-paragraph
+    <gmbt-paragraph
       >Todos los fondos que se recaudaron se destinarán íntegramente a la financiación de la construcción, equipamiento
       y puesta en marcha de una nueva residencia para personas con problemas de salud mental en La Rioja (recurso
       inexistente en la actualidad), la cual estará llevada directamente por la propia
-      <app-external-link-text link="http://www.arfes.org/"
-        >Asociación de Salud Mental de la Rioja</app-external-link-text
+      <gmbt-external-link-text link="http://www.arfes.org/"
+        >Asociación de Salud Mental de la Rioja</gmbt-external-link-text
       >
-      ¡No dudéis en pasaros por su web para ver las actualizaciones de su trabajo!</app-paragraph
+      ¡No dudéis en pasaros por su web para ver las actualizaciones de su trabajo!</gmbt-paragraph
     >
-    <app-paragraph>
-      <app-img [src]="'./assets/images/blanket-2021/blanket-2021-7.jpg'"></app-img>
-    </app-paragraph>
-    <app-paragraph
+    <gmbt-paragraph>
+      <gmbt-img [src]="'./assets/images/blanket-2021/blanket-2021-7.jpg'"></gmbt-img>
+    </gmbt-paragraph>
+    <gmbt-paragraph
       >Gracias a todos por colaborar con esta causa…
-      <app-encourage-text>¡nos vemos en la siguiente!</app-encourage-text></app-paragraph
+      <gmbt-encourage-text>¡nos vemos en la siguiente!</gmbt-encourage-text></gmbt-paragraph
     >
-    <app-paragraph><app-encourage-text>Let's make some noise to help people - NTH</app-encourage-text></app-paragraph>
-  </app-paragraph-group>
+    <gmbt-paragraph
+      ><gmbt-encourage-text>Let's make some noise to help people - NTH</gmbt-encourage-text></gmbt-paragraph
+    >
+  </gmbt-paragraph-group>
 </app-view>

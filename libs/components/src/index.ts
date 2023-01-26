@@ -19,3 +19,16 @@ export { GmbtHorizontalDividerComponent } from './lib/modules/typography/horizon
 export { GmbtListItemParagraphComponent } from './lib/modules/typography/list-item-paragraph.component';
 export { GmbtDividerParagraphComponent } from './lib/modules/typography/divider-paragraph.component';
 export { GmbtTypographyModule } from './lib/modules/typography/typography.module';
+
+export { GmbtCarouselComponent } from './lib/modules/carousel/components/carousel.component';
+export { GmbtCarouselItemDirective } from './lib/modules/carousel/directives/carousel-item.directive';
+export { GmbtCarouselModule } from './lib/modules/carousel/carousel.module';
+
+export { GmbtImgComponent } from './lib/modules/img/img.component';
+export { GmbtImgModule } from './lib/modules/img/img.module';
+
+export { GmbtResizeObserverDirective } from './lib/modules/resize-observer/resize-observer.directive';
+export { GmbtResizeObserverModule } from './lib/modules/resize-observer/resize-observer.module';
+
+export { GmbtSignatureComponent } from './lib/modules/signature/signature.component';
+export { GmbtSignatureModule } from './lib/modules/signature/signature.module';

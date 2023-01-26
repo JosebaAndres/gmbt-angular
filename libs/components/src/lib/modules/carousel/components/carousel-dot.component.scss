@@ -1,0 +1,22 @@
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+@import '../../../../assets/scss/settings/sizes.scss';
+@import '../../../../assets/scss/settings/colors.scss';
+@import '../../../../assets/scss/settings/margins.scss';
+@import '../../../../assets/scss/settings/angular-material.scss';
+
+$config: mat.get-color-config($gmbt-mat-theme);
+$foreground: map.get($config, foreground);
+
+.gmbt-carousel-dot {
+  display: inline-block;
+  border: 2px solid mat.get-color-from-palette($foreground, text);
+  border-radius: 100px;
+  margin: 4px;
+  width: 8px;
+  height: 8px;
+  &--selected {
+    background-color: mat.get-color-from-palette($foreground, text);
+  }
+}
