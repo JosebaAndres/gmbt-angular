@@ -61,21 +61,10 @@ export const SUB_MENU_ITEMS: Array<MenuItemModel> = [
 
 export const SUB_MENU_ITEMS_IN_DEVELOPMENT: Array<MenuItemModel> = [];
 
-export const SUB_MENU_ITEMS_PLAYGROUND: Array<MenuItemModel> = [
-  {
-    description: 'Playground',
-    routerLink: '/playground',
-    type: MenuItemModelType.default,
-  },
-];
-
 function getMenuItems(): Array<MenuItemModel> {
   let result = [...SUB_MENU_ITEMS];
   if (environment.showFeaturesInDevelopment) {
     result = result.concat(SUB_MENU_ITEMS_IN_DEVELOPMENT);
-  }
-  if (environment.showPlayground) {
-    result = result.concat(SUB_MENU_ITEMS_PLAYGROUND);
   }
   return result;
 }

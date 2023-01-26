@@ -24,7 +24,7 @@ export class CardComponent implements OnChanges {
       this.resolveImagePath();
     }
     if (changes['avatarPath']) {
-      this.resolveAvatarPath;
+      this.resolveAvatarPath();
     }
   }
 

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PlaygroundGuard } from './services/playground-guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
@@ -41,11 +40,6 @@ const routes: Routes = [
   {
     path: 'questions',
     loadChildren: () => import('./routed-modules/questions/questions.module').then((m) => m.QuestionsUsModule),
-  },
-  {
-    path: 'playground',
-    loadChildren: () => import('./routed-modules/playground/playground.module').then((m) => m.PlaygroundModule),
-    canActivate: [PlaygroundGuard],
   },
   { path: '**', redirectTo: 'main' },
 ];

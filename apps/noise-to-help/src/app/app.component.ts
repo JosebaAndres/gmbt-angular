@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core'
 import { UiStoreFacade } from './stores/ui/ui-store-facade';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
