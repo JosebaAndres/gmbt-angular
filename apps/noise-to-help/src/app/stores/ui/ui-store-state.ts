@@ -16,7 +16,7 @@ export interface UiStoreState {
   navigating: boolean;
 }
 
-export const SUB_MENU_ITEMS: Array<MenuItemModel> = [
+const SUB_MENU_ITEMS: Array<MenuItemModel> = [
   {
     description: 'Quienes somos',
     routerLink: '/about-us',
@@ -58,8 +58,7 @@ export const SUB_MENU_ITEMS: Array<MenuItemModel> = [
     type: MenuItemModelType.default,
   },
 ];
-
-export const SUB_MENU_ITEMS_IN_DEVELOPMENT: Array<MenuItemModel> = [];
+const SUB_MENU_ITEMS_IN_DEVELOPMENT: Array<MenuItemModel> = [];
 
 function getMenuItems(): Array<MenuItemModel> {
   let result = [...SUB_MENU_ITEMS];
@@ -69,7 +68,7 @@ function getMenuItems(): Array<MenuItemModel> {
   return result;
 }
 
-export const SIGNATURES: Array<SignatureModel> = [LOGO_NOISE_TO_HELP];
+const SIGNATURES: Array<SignatureModel> = [LOGO_NOISE_TO_HELP];
 
 export const initialUiStoreState: UiStoreState = {
   menuOpened: false,

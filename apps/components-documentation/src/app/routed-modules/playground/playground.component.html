@@ -1,2 +1,7 @@
 <h2>Playground</h2>
+<select name="theme" [(ngModel)]="selectedTheme">
+  <option [value]="theme.code" *ngFor="let theme of themes$ | async">
+    {{ theme.description }}
+  </option>
+</select>
 <router-outlet></router-outlet>
