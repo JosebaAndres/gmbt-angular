@@ -1,19 +1,5 @@
-// Settings
-@import 'scss/settings/colors.scss';
-@import 'scss/settings/angular-material.scss';
-
-// Tools
-
 // generic
-@import 'scss/generic/reset.scss';
-@import 'scss/generic/body.scss';
-@import 'scss/generic/button.scss';
-@import 'scss/generic/hyperlink.scss';
-@import 'scss/generic/angular-material.scss';
-
-// objects
-
-// components
+@import '../../../libs/components/scss/generic.scss';
 
 // trumps
-@import 'scss/trumps/trumps.scss';
+@import '../../../libs/components/scss/trumps.scss';

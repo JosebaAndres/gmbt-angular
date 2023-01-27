@@ -1,9 +1,7 @@
-@import '../scss/settings/sizes.scss';
-@import '../scss/settings/margins.scss';
-@import '../scss/settings/colors.scss';
+@use '../../../../libs/components/scss/settings/colors.scss' as gmbr-colors;
 
 .app-app {
-  background: $background-500-color;
-  color: $primary-500-color-contrast;
+  background: gmbr-colors.$background-500-color;
+  color: gmbr-colors.$primary-500-color-contrast;
   height: 100%;
 }
