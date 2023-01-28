@@ -1,11 +1,13 @@
+@use '../settings/colors.scss' as colors;
+
 a {
   text-decoration: none;
-  color: $primary-500-color-contrast;
+  color: colors.$primary-500-color-contrast;
 }
 
 a:hover {
   text-decoration: none;
-  color: $primary-500-color-contrast;
+  color: colors.$primary-500-color-contrast;
 }
 
 a:focus {
