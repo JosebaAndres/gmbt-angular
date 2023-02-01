@@ -1,7 +1,4 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/margins.scss';
-@import '../../../scss/settings/colors.scss';
-@import '../../../scss/settings/transitions.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-shell {
   height: 100%;
@@ -24,12 +21,12 @@
   text-align: left;
   &--primary {
     border-radius: 0;
-    border-bottom-color: $primary-500-color-contrast;
-    border-top-color: $primary-500-color-contrast;
+    border-bottom-color: gmbt-theming.$primary-500-color-contrast;
+    border-top-color: gmbt-theming.$primary-500-color-contrast;
     &:hover {
-      background: $primary-500-color-contrast;
-      color: $background-200-color;
-      transition: background $over-transition, color $over-transition;
+      background: gmbt-theming.$primary-500-color-contrast;
+      color: gmbt-theming.$background-200-color;
+      transition: background gmbt-theming.$over-transition, color gmbt-theming.$over-transition;
     }
   }
 }
@@ -45,31 +42,33 @@
 }
 
 .app-shell__main-content-footer {
-  padding: 0 ($horizontal-margin-l - $horizontal-margin-m) ($vertical-margin-l - $vertical-margin-m)
-    ($horizontal-margin-l - $horizontal-margin-m);
+  padding: 0 (gmbt-theming.$horizontal-margin-l - gmbt-theming.$horizontal-margin-m)
+    (gmbt-theming.$vertical-margin-l - gmbt-theming.$vertical-margin-m)
+    (gmbt-theming.$horizontal-margin-l - gmbt-theming.$horizontal-margin-m);
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   .app-shell__main-content-footer {
-    padding: 0 ($horizontal-margin-m - $horizontal-margin-s) ($vertical-margin-m - $vertical-margin-s)
-      ($horizontal-margin-m - $horizontal-margin-s);
+    padding: 0 (gmbt-theming.$horizontal-margin-m - gmbt-theming.$horizontal-margin-s)
+      (gmbt-theming.$vertical-margin-m - gmbt-theming.$vertical-margin-s)
+      (gmbt-theming.$horizontal-margin-m - gmbt-theming.$horizontal-margin-s);
   }
 }
 
 .app-shell__main-content-footer-item {
-  padding-left: $horizontal-margin-m;
-  padding-right: $horizontal-margin-m;
-  padding-bottom: $vertical-margin-m;
+  padding-left: gmbt-theming.$horizontal-margin-m;
+  padding-right: gmbt-theming.$horizontal-margin-m;
+  padding-bottom: gmbt-theming.$vertical-margin-m;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   .app-shell__main-content-footer-item {
-    padding-left: $horizontal-margin-s;
-    padding-right: $horizontal-margin-s;
-    padding-bottom: $vertical-margin-s;
+    padding-left: gmbt-theming.$horizontal-margin-s;
+    padding-right: gmbt-theming.$horizontal-margin-s;
+    padding-bottom: gmbt-theming.$vertical-margin-s;
   }
 }
 
@@ -88,7 +87,7 @@
   z-index: 100;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   .app-shell__navbar-secondary {
     position: unset;
     top: unset;
@@ -102,7 +101,7 @@
   z-index: 100;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   .app-shell__navbar-primary {
     top: 0;
   }

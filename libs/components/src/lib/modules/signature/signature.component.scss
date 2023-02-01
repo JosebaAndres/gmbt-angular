@@ -1,6 +1,4 @@
-@import '../../../../scss/settings/sizes.scss';
-@import '../../../../scss/settings/margins.scss';
-@import '../../../../scss/settings/colors.scss';
+@use '../../../../scss/theming.scss' as theming;
 
 .gmbt-signature__img {
   object-fit: contain;
@@ -8,13 +6,13 @@
   max-width: 100%;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: theming.$sm-max-size) {
   .gmbt-signature__img {
     max-height: 125px;
   }
 }
 
-@media (max-width: $xs-max-size) {
+@media (max-width: theming.$xs-max-size) {
   .gmbt-signature__img {
     max-height: 100px;
   }

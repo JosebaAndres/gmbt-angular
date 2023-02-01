@@ -1,6 +1,4 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/margins.scss';
-@import '../../../scss/settings/colors.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-centered-layout {
   display: flex;
@@ -13,9 +11,9 @@
 
 .app-centered-layout-center {
   width: 100%;
-  max-width: $content-max-size;
+  max-width: gmbt-theming.$content-max-size;
   &--with-background {
-    background: $background-500-color;
+    background: gmbt-theming.$background-500-color;
   }
 }
 

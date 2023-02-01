@@ -1,12 +1,11 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/margins.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-view {
-  padding: $vertical-margin-l $horizontal-margin-l;
+  padding: gmbt-theming.$vertical-margin-l gmbt-theming.$horizontal-margin-l;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   .app-view {
-    padding: $vertical-margin-m $horizontal-margin-m;
+    padding: gmbt-theming.$vertical-margin-m gmbt-theming.$horizontal-margin-m;
   }
 }

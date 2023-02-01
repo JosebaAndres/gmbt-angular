@@ -1,7 +1,4 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/colors.scss';
-@import '../../../scss/settings/margins.scss';
-@import '../../../scss/settings/transitions.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-navbar-primary__toolbar-container {
   width: 100%;
@@ -15,17 +12,17 @@
 }
 
 .app-navbar-primary__link-item {
-  padding-left: $horizontal-margin-s;
-  padding-right: $horizontal-margin-s;
+  padding-left: gmbt-theming.$horizontal-margin-s;
+  padding-right: gmbt-theming.$horizontal-margin-s;
   &--title-hack {
     min-width: auto;
   }
   &--primary-button {
-    border-color: $primary-500-color-contrast;
+    border-color: gmbt-theming.$primary-500-color-contrast;
     &:hover {
-      background: $primary-500-color-contrast;
-      color: $primary-500-color;
-      transition: background $over-transition, color $over-transition;
+      background: gmbt-theming.$primary-500-color-contrast;
+      color: gmbt-theming.$primary-500-color;
+      transition: background gmbt-theming.$over-transition, color gmbt-theming.$over-transition;
     }
   }
 }
@@ -38,11 +35,11 @@
 .app-navbar-primary__title-img {
   height: 50px;
   object-fit: contain;
-  margin-right: $horizontal-margin-s;
+  margin-right: gmbt-theming.$horizontal-margin-s;
   display: block;
 }
 
-@media (max-width: $xs-max-size) {
+@media (max-width: gmbt-theming.$xs-max-size) {
   .app-navbar-primary__title-img {
     height: 40px;
   }
@@ -79,7 +76,7 @@
   height: 64px;
 }
 
-@media (max-width: $xs-max-size) {
+@media (max-width: gmbt-theming.$xs-max-size) {
   .app-navbar-primary {
     height: 56px;
   }

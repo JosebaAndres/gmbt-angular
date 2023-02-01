@@ -1,45 +1,43 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/margins.scss';
-@import '../../../scss/settings/colors.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-merchandising__table {
   width: 100%;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   th.mat-header-cell,
   td.mat-cell,
   td.mat-footer-cell {
-    padding: $horizontal-margin-s;
+    padding: gmbt-theming.$horizontal-margin-s;
   }
   th.mat-header-cell:last-of-type,
   td.mat-cell:last-of-type,
   td.mat-footer-cell:last-of-type {
-    padding-right: $horizontal-margin-s;
+    padding-right: gmbt-theming.$horizontal-margin-s;
   }
 
   th.mat-header-cell:first-of-type,
   td.mat-cell:first-of-type,
   td.mat-footer-cell:first-of-type {
-    padding-left: $horizontal-margin-s;
+    padding-left: gmbt-theming.$horizontal-margin-s;
   }
 }
 
-@media (max-width: $xs-max-size) {
+@media (max-width: gmbt-theming.$xs-max-size) {
   th.mat-header-cell,
   td.mat-cell,
   td.mat-footer-cell {
-    padding: $horizontal-margin-xs;
+    padding: gmbt-theming.$horizontal-margin-xs;
   }
   th.mat-header-cell:last-of-type,
   td.mat-cell:last-of-type,
   td.mat-footer-cell:last-of-type {
-    padding-right: $horizontal-margin-xs;
+    padding-right: gmbt-theming.$horizontal-margin-xs;
   }
 
   th.mat-header-cell:first-of-type,
   td.mat-cell:first-of-type,
   td.mat-footer-cell:first-of-type {
-    padding-left: $horizontal-margin-xs;
+    padding-left: gmbt-theming.$horizontal-margin-xs;
   }
 }

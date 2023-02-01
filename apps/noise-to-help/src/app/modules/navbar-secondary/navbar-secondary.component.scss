@@ -1,7 +1,4 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/colors.scss';
-@import '../../../scss/settings/margins.scss';
-@import '../../../scss/settings/transitions.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-navbar-secondary__toolbar-container {
   width: 100%;
@@ -15,8 +12,8 @@
 }
 
 .app-navbar-secondary__link-item {
-  padding-left: $horizontal-margin-s;
-  padding-right: $horizontal-margin-s;
+  padding-left: gmbt-theming.$horizontal-margin-s;
+  padding-right: gmbt-theming.$horizontal-margin-s;
 }
 
 .app-navbar-secondary__separator-item {

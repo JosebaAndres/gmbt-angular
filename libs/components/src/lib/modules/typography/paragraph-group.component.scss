@@ -1,7 +1,5 @@
-@import '../../../../scss/settings/sizes.scss';
-@import '../../../../scss/settings/margins.scss';
-@import '../../../../scss/settings/colors.scss';
+@use '../../../../scss/theming.scss' as theming;
 
 .gmbt-paragraph-group {
-  padding-bottom: $vertical-margin-ms;
+  padding-bottom: theming.$vertical-margin-ms;
 }

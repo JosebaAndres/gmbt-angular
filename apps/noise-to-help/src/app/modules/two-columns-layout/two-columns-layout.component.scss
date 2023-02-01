@@ -1,14 +1,12 @@
-@import '../../../scss/settings/sizes.scss';
-@import '../../../scss/settings/margins.scss';
-@import '../../../scss/settings/colors.scss';
+@use '../../../../../../libs/components/scss/theming.scss' as gmbt-theming;
 
 .app-two-columns-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: $horizontal-margin-ms;
+  grid-column-gap: gmbt-theming.$horizontal-margin-ms;
 }
 
-@media (max-width: $sm-max-size) {
+@media (max-width: gmbt-theming.$sm-max-size) {
   .app-two-columns-layout {
     display: block;
   }

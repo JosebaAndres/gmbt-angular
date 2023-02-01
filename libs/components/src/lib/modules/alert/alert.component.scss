@@ -1,13 +1,11 @@
-@import '../../../../scss/settings/sizes.scss';
-@import '../../../../scss/settings/margins.scss';
-@import '../../../../scss/settings/colors.scss';
+@use '../../../../scss/theming.scss' as theming;
 
 .gmbt-alert {
   font-weight: 500;
-  padding: 0 $horizontal-margin-m;
+  padding: 0 theming.$horizontal-margin-m;
   line-height: 36px;
-  border-radius: $border-radius-m;
+  border-radius: theming.$border-radius-m;
   &--info {
-    background-color: $info-200-color;
+    background-color: theming.$info-200-color;
   }
 }

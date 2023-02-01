@@ -1,12 +1,8 @@
 @use '@angular/material' as mat;
 @use 'sass:map';
+@use '../../../../../scss/theming.scss' as theming;
 
-@import '../../../../../scss/settings/sizes.scss';
-@import '../../../../../scss/settings/margins.scss';
-@import '../../../../../scss/settings/colors.scss';
-@import '../../../../../scss/settings/angular-material.scss';
-
-$config: mat.get-color-config($app-mat-theme);
+$config: mat.get-color-config(theming.$app-mat-theme);
 $foreground: map.get($config, foreground);
 
 .gmbt-carousel-dot {
