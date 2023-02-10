@@ -1,0 +1,11 @@
+@use '../../../../scss/theming.scss' as theming;
+
+.gmbt-view {
+  padding: theming.$vertical-margin-l theming.$horizontal-margin-l;
+}
+
+@media (max-width: theming.$sm-max-size) {
+  .gmbt-view {
+    padding: theming.$vertical-margin-m theming.$horizontal-margin-m;
+  }
+}

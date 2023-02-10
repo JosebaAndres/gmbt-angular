@@ -35,3 +35,6 @@ export { GmbtSignatureModule } from './lib/modules/signature/signature.module';
 
 export { GmbtMarkupRendererComponent } from './lib/modules/markup-renderer/markup-renderer.component';
 export { GmbtMarkupRendererModule } from './lib/modules/markup-renderer/markup-renderer.module';
+
+export { GmbtViewComponent } from './lib/modules/view/view.component';
+export { GmbtViewModule } from './lib/modules/view/view.module';

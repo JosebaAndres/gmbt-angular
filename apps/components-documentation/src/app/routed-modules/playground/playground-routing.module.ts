@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () =>
           import('./routed-modules/markup-renderer/markup-renderer.module').then((m) => m.MarkupRendererModule),
       },
+      {
+        path: 'view',
+        loadChildren: () => import('./routed-modules/view/view.module').then((m) => m.ViewModule),
+      },
       { path: '**', redirectTo: 'dashboard' },
     ],
   },
