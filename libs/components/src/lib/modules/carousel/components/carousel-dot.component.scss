@@ -2,7 +2,7 @@
 @use 'sass:map';
 @use '../../../../../scss/theming.scss' as theming;
 
-$config: mat.get-color-config(theming.$app-mat-theme);
+$config: mat.get-color-config(theming.$gmbt-mat-theme);
 $foreground: map.get($config, foreground);
 
 .gmbt-carousel-dot {
