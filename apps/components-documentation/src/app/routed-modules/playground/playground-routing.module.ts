@@ -24,6 +24,11 @@ const routes: Routes = [
         path: 'alert',
         loadChildren: () => import('./routed-modules/alert/alert.module').then((m) => m.AlertModule),
       },
+      {
+        path: 'markup-renderer',
+        loadChildren: () =>
+          import('./routed-modules/markup-renderer/markup-renderer.module').then((m) => m.MarkupRendererModule),
+      },
       { path: '**', redirectTo: 'dashboard' },
     ],
   },

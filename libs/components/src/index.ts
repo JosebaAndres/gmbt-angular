@@ -32,3 +32,6 @@ export { GmbtResizeObserverModule } from './lib/modules/resize-observer/resize-o
 
 export { GmbtSignatureComponent } from './lib/modules/signature/signature.component';
 export { GmbtSignatureModule } from './lib/modules/signature/signature.module';
+
+export { GmbtMarkupRendererComponent } from './lib/modules/markup-renderer/markup-renderer.component';
+export { GmbtMarkupRendererModule } from './lib/modules/markup-renderer/markup-renderer.module';
