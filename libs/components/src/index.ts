@@ -38,3 +38,6 @@ export { GmbtMarkupRendererModule } from './lib/modules/markup-renderer/markup-r
 
 export { GmbtViewComponent } from './lib/modules/view/view.component';
 export { GmbtViewModule } from './lib/modules/view/view.module';
+
+export { GmbtButtonComponent } from './lib/modules/button/button.component';
+export { GmbtButtonModule } from './lib/modules/button/button.module';

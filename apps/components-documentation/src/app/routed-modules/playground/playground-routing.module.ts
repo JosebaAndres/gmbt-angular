@@ -33,6 +33,10 @@ const routes: Routes = [
         path: 'view',
         loadChildren: () => import('./routed-modules/view/view.module').then((m) => m.ViewModule),
       },
+      {
+        path: 'button',
+        loadChildren: () => import('./routed-modules/button/button.module').then((m) => m.ButtonModule),
+      },
       { path: '**', redirectTo: 'dashboard' },
     ],
   },

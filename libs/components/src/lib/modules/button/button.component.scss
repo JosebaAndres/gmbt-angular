@@ -1,0 +1,5 @@
+@use '../../../../scss/theming.scss' as theming;
+
+.gmbt-button {
+  background: theming.$accent-500-color;
+}
