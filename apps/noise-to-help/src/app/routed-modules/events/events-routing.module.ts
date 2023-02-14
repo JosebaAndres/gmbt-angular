@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'aventum-2022',
     loadChildren: () => import('./routed-modules/aventum-2022/aventum-2022.module').then((m) => m.Aventum2022Module),
   },
+  {
+    path: 'unirioja-2023',
+    loadChildren: () => import('./routed-modules/unirioja-2023/unirioja-2023.module').then((m) => m.Unirioja2023Module),
+  },
 ];
 
 @NgModule({
