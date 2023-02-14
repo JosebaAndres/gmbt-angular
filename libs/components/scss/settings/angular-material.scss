@@ -45,7 +45,7 @@ $gmbt-mat-warn-palette: (
 $gmbt-mat-warn: mat.define-palette($gmbt-mat-warn-palette);
 
 $gmbt-typography: mat.define-typography-config(
-  $font-family: 'Ubuntu',
+  $font-family: 'Roboto',
 );
 
 // Create the theme object. A theme consists of configurations for individual
