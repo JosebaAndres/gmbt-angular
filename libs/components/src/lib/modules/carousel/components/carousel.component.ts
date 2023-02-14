@@ -68,7 +68,11 @@ export class GmbtCarouselComponent implements OnChanges, AfterViewInit, OnDestro
 
   ngOnDestroy(): void {
     // TODO: check why is this if required...
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     if (this.carousel.nativeElement.removeAllListeners) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       this.carousel.nativeElement.removeAllListeners();
     }
     this.destroy$.next();
