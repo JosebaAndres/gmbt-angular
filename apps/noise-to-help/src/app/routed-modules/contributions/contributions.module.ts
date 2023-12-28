@@ -3,11 +3,19 @@ import { CommonModule } from '@angular/common';
 import { ContributionsComponent } from './contributions.component';
 import { ContributionsRoutingModule } from './contributions-routing.module';
 import { RouterModule } from '@angular/router';
-import { GmbtTypographyModule, GmbtViewModule } from '@gmbt-angular/components';
+import { GmbtCarouselModule, GmbtImgModule, GmbtTypographyModule, GmbtViewModule } from '@gmbt-angular/components';
 
 @NgModule({
   declarations: [ContributionsComponent],
-  imports: [CommonModule, ContributionsRoutingModule, GmbtViewModule, RouterModule, GmbtTypographyModule],
+  imports: [
+    CommonModule,
+    ContributionsRoutingModule,
+    GmbtViewModule,
+    RouterModule,
+    GmbtTypographyModule,
+    GmbtCarouselModule,
+    GmbtImgModule,
+  ],
   exports: [ContributionsComponent],
 })
 export class ContributionsModule {}

@@ -54,6 +54,21 @@ const routes: Routes = [
         (m) => m.SolidaryConcert2023Module,
       ),
   },
+  {
+    path: 'briones-beer-day-2023',
+    loadChildren: () =>
+      import('./routed-modules/briones-beer-day-2023/briones-beer-day-2023.module').then(
+        (m) => m.BrionesBeerDay2023Module,
+      ),
+  },
+  {
+    path: 'toys-2023',
+    loadChildren: () => import('./routed-modules/toys-2023/toys-2023.module').then((m) => m.Toys2023Module),
+  },
+  {
+    path: 'guitar-2023',
+    loadChildren: () => import('./routed-modules/guitar-2023/guitar-2023.module').then((m) => m.Guitar2023Module),
+  },
 ];
 
 @NgModule({
