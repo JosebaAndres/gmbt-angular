@@ -47,6 +47,13 @@ const routes: Routes = [
     path: 'unirioja-2023',
     loadChildren: () => import('./routed-modules/unirioja-2023/unirioja-2023.module').then((m) => m.Unirioja2023Module),
   },
+  {
+    path: 'solidary-concert-2023',
+    loadChildren: () =>
+      import('./routed-modules/solidary-concert-2023/solidary-concert-2023.module').then(
+        (m) => m.SolidaryConcert2023Module,
+      ),
+  },
 ];
 
 @NgModule({

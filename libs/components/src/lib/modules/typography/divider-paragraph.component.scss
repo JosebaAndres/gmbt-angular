@@ -1,1 +1,18 @@
 @use '../../../../scss/theming.scss' as theming;
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+$config: mat.get-color-config(theming.$gmbt-mat-theme);
+$foreground: map.get($config, foreground);
+
+.gmbt-divider-paragraph {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+  color: mat.get-color-from-palette($foreground, divider);
+}
+
+.gmbt-divider-paragraph__divider {
+  flex: 1;
+}

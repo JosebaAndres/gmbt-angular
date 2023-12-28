@@ -7,6 +7,29 @@
       <app-two-columns-layout-item>
         <gmbt-paragraph>
           <gmbt-card
+            [title]="'Concierto benéfico NTH en favor de Sara 🎸'"
+            [subtitle]="'15/04/2023 - Logroño (La Rioja)'"
+            [imagePath]="'./assets/images/solidary-concert-2023/solidary-concert-2023-0.jpg'"
+          >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text
+                link="https://www.facebook.com/people/Sara-La-Princesa-de-la-Sonrisa-Infinita/100086752131941/"
+                >Sara La Princesa de la Sonrisa Infinita</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/solidary-concert-2023'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
             [title]="'Encuentro de monociclistas &#34;Unirioja&#34; 2023'"
             [subtitle]="'03-04-05/03/2023 - Briones (La Rioja)'"
             [imagePath]="'./assets/images/unirioja-2023/unirioja-2023-0.jpg'"
