@@ -69,6 +69,10 @@ const routes: Routes = [
     path: 'guitar-2023',
     loadChildren: () => import('./routed-modules/guitar-2023/guitar-2023.module').then((m) => m.Guitar2023Module),
   },
+  {
+    path: 'unirioja-2024',
+    loadChildren: () => import('./routed-modules/unirioja-2024/unirioja-2024.module').then((m) => m.Unirioja2024Module),
+  },
 ];
 
 @NgModule({
