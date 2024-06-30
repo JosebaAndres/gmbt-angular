@@ -16,7 +16,3 @@ handlers:
     secure: always
     static_files: dist/apps/noise-to-help/index.html
     upload: dist/apps/noise-to-help/index.html
-
-# Skip any files not in the dist folder
-skip_files:
-  - ^(?!dist)
