@@ -16,7 +16,10 @@ export { GmbtEmailLinkTextComponent } from './lib/modules/typography/email-link-
 export { GmbtSubTitleTextComponent } from './lib/modules/typography/subtitle-text.component';
 export { GmbtParagraphGroupComponent } from './lib/modules/typography/paragraph-group.component';
 export { GmbtHorizontalDividerComponent } from './lib/modules/typography/horizontal-divider.component';
-export { GmbtListItemParagraphComponent } from './lib/modules/typography/list-item-paragraph.component';
+export {
+  GmbtListItemParagraphComponentType,
+  GmbtListItemParagraphComponent,
+} from './lib/modules/typography/list-item-paragraph.component';
 export { GmbtDividerParagraphComponent } from './lib/modules/typography/divider-paragraph.component';
 export { GmbtTypographyModule } from './lib/modules/typography/typography.module';
 

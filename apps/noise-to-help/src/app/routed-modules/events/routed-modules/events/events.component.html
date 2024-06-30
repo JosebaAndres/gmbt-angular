@@ -7,10 +7,32 @@
       <app-two-columns-layout-item>
         <gmbt-paragraph>
           <gmbt-card
+            [title]="'Briones beer day 🍺🍺'"
+            [subtitle]="'13/07/2024 - Briones (La Rioja)'"
+            [imagePath]="'./assets/images/briones-beer-day-2024/briones-beer-day-2024-0.jpg'"
+          >
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text link="https://www.facebook.com/NoNameKitchenBelgrade"
+                >No Name Kitchen</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/briones-beer-day-2024'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
             [title]="'Encuentro de monociclistas &#34;Unirioja&#34; 2024'"
             [subtitle]="'01-02-03/03/2024 - Briones (La Rioja)'"
             [imagePath]="'./assets/images/unirioja-2024/unirioja-2024-0.jpg'"
           >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
             <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
             <gmbt-list-item-paragraph
               ><gmbt-external-link-text link="https://ongamic.org/es/casa-emanuel/"

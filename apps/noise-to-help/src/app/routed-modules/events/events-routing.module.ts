@@ -73,6 +73,13 @@ const routes: Routes = [
     path: 'unirioja-2024',
     loadChildren: () => import('./routed-modules/unirioja-2024/unirioja-2024.module').then((m) => m.Unirioja2024Module),
   },
+  {
+    path: 'briones-beer-day-2024',
+    loadChildren: () =>
+      import('./routed-modules/briones-beer-day-2024/briones-beer-day-2024.module').then(
+        (m) => m.BrionesBeerDay2024Module,
+      ),
+  },
 ];
 
 @NgModule({
