@@ -1,11 +1,3 @@
-# This file specifies the files and directories that should be ignored
-# during deployment to Google App Engine.
-
-# Ignore all files outside the 'dist' directory
+# Ignore all files except those in the 'dist' directory
+*
 !dist/
-
-# Ignore all files in the 'dist' directory except those in 'apps/noise-to-help'
-dist/*
-!dist/apps/
-dist/apps/*
-!dist/apps/noise-to-help/
