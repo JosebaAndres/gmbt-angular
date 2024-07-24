@@ -65,32 +65,16 @@ export class MerchandisingComponent implements OnInit, OnDestroy {
   womanTableDisplayedColumns: string[] = ['description', 's', 'm', 'l', 'xl', 'xxl'];
   manTableDisplayedColumns: string[] = ['description', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'];
 
-  paypalFormValue$!: Observable<string>;
   womanSizesDataSource!: WomanSizesDataSource;
   manSizesDataSource!: ManSizesDataSource;
   shortSizesDataSource!: ShortSizesDataSource;
 
-  shippingForm = new FormGroup({
-    withShipping: new FormControl(true, { nonNullable: true }),
-  });
-
   constructor(private uiStoreFacade: UiStoreFacade, private merchandisingStoreFacade: MerchandisingStoreFacade) {}
 
   ngOnInit(): void {
-    this.merchandisingStoreFacade.initForm();
-    this.paypalFormValue$ = this.merchandisingStoreFacade.selectPaypalFormValue();
     this.womanSizesDataSource = new WomanSizesDataSource(this.merchandisingStoreFacade.selectWomanSizes());
     this.manSizesDataSource = new ManSizesDataSource(this.merchandisingStoreFacade.selectManSizes());
     this.shortSizesDataSource = new ShortSizesDataSource(this.merchandisingStoreFacade.selectShortSizes());
-    this.merchandisingStoreFacade
-      .selectWithShipping()
-      .pipe(take(1))
-      .subscribe((value) => {
-        this.shippingForm.controls.withShipping.setValue(value);
-      });
-    this.shippingForm.controls.withShipping.valueChanges.pipe(takeUntil(this.destroy$)).subscribe((value) => {
-      this.merchandisingStoreFacade.setWithShipping(value);
-    });
     this.uiStoreFacade.addSignature(LOGO_CAMISETAS_AHORA);
     this.uiStoreFacade.addSignature(LOGO_CHICXS);
   }

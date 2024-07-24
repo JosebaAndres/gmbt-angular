@@ -1,15 +1,4 @@
-import { createReducer, on } from '@ngrx/store';
-import {
-  merchandisingStoreActionSetPaypalFormValue,
-  merchandisingStoreActionSetWithShipping,
-} from './merchandising-store-actions';
+import { createReducer } from '@ngrx/store';
 import { initialMerchandisingStoreState } from './merchandising-store-state';
 
-export const merchandisingReducer = createReducer(
-  initialMerchandisingStoreState,
-  on(merchandisingStoreActionSetWithShipping, (state, { withShipping }) => ({ ...state, withShipping })),
-  on(merchandisingStoreActionSetPaypalFormValue, (state, { paypalFormValue }) => ({
-    ...state,
-    paypalFormValue,
-  })),
-);
+export const merchandisingReducer = createReducer(initialMerchandisingStoreState);
