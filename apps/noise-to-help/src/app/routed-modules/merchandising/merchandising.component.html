@@ -182,29 +182,6 @@
   </gmbt-paragraph-group>
   <gmbt-paragraph-group>
     <gmbt-paragraph>
-      Si prefieres el pago vía PayPal, o con tarjeta de crédito sin tener cuenta en PayPal, simplemente señala si lo
-      quieres con gastos de envío y realiza todo el proceso desde el siguiente enlace:
-    </gmbt-paragraph>
-    <gmbt-paragraph>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" [value]="paypalFormValue$ | async" />
-        <input
-          type="image"
-          src="./assets/images/paypal-pay.png"
-          border="0"
-          name="submit"
-          alt="PayPal, la forma rápida y segura de pagar en Internet."
-        />
-        <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1" />
-      </form>
-      <form [formGroup]="shippingForm">
-        <mat-checkbox formControlName="withShipping">Con gatos de envío</mat-checkbox>
-      </form>
-    </gmbt-paragraph>
-  </gmbt-paragraph-group>
-  <gmbt-paragraph-group>
-    <gmbt-paragraph>
       Una vez recibida la información de la solicitud te enviaremos un email confirmando la correcta recepción de la
       misma.
     </gmbt-paragraph>
