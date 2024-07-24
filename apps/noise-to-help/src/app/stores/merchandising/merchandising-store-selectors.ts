@@ -20,3 +20,8 @@ export const merchandisingStoreSelectWomanSizes = createSelector(
 );
 
 export const merchandisingStoreSelectManSizes = createSelector(getMerchandisingStoreState, (state) => state.manSizes);
+
+export const merchandisingStoreSelectShortSizes = createSelector(
+  getMerchandisingStoreState,
+  (state) => state.shortSizes,
+);

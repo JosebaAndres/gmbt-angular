@@ -10,10 +10,12 @@ import {
 import {
   merchandisingStoreSelectManSizes,
   merchandisingStoreSelectPaypalFormValue,
+  merchandisingStoreSelectShortSizes,
   merchandisingStoreSelectWithShipping,
   merchandisingStoreSelectWomanSizes,
 } from './merchandising-store-selectors';
 import { MerchandisingStoreState } from './merchandising-store-state';
+import { ShortSizeModel } from '../../models/short-size-model';
 
 @Injectable()
 export class MerchandisingStoreFacade {
@@ -33,6 +35,10 @@ export class MerchandisingStoreFacade {
 
   selectManSizes(): Observable<Array<ManSizeModel>> {
     return this.merchandisingStore$.select(merchandisingStoreSelectManSizes);
+  }
+
+  selectShortSizes(): Observable<Array<ShortSizeModel>> {
+    return this.merchandisingStore$.select(merchandisingStoreSelectShortSizes);
   }
 
   initForm(): void {
