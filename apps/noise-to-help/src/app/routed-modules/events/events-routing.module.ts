@@ -80,6 +80,15 @@ const routes: Routes = [
         (m) => m.BrionesBeerDay2024Module,
       ),
   },
+  {
+    path: 'drum-2024',
+    loadChildren: () => import('./routed-modules/drum-2024/drum-2024.module').then((m) => m.Drum2024Module),
+  },
+  {
+    path: 'collection-2024',
+    loadChildren: () =>
+      import('./routed-modules/collection-2024/collection-2024.module').then((m) => m.Collection2024Module),
+  },
 ];
 
 @NgModule({

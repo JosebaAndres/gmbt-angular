@@ -37,6 +37,50 @@
       <app-two-columns-layout-item>
         <gmbt-paragraph>
           <gmbt-card
+            [title]="'Recogida de material humanitario'"
+            [subtitle]="'12/2024 - Briones y Logroño (La Rioja)'"
+            [imagePath]="'./assets/images/collection-2024/collection-2024-0.jpg'"
+          >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text link="https://sosrefugiados.org/"
+                >Red SOS Refugiados Europa</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/collection-2024'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
+            [title]="'Sorteo de batería eléctrica'"
+            [subtitle]="'12/2024 - Briones y Logroño (La Rioja)'"
+            [imagePath]="'./assets/images/drum-2024/drum-2024-0.jpg'"
+          >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text link="https://fundcapp.org/es/"
+                >Fundación CAPP (Gaza)</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/drum-2024'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
             [title]="'Briones beer day 🍺🍺'"
             [subtitle]="'13/07/2024 - Briones (La Rioja)'"
             [imagePath]="'./assets/images/briones-beer-day-2024/briones-beer-day-2024-0.jpg'"
