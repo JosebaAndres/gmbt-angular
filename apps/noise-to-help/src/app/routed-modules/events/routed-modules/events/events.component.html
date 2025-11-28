@@ -7,6 +7,28 @@
       <app-two-columns-layout-item>
         <gmbt-paragraph>
           <gmbt-card
+            [title]="'Briones beer day'"
+            [subtitle]="'12/07/2025 - Briones (La Rioja)'"
+            [imagePath]="'./assets/images/briones-beer-day-2025/briones-beer-day-2025-0.jpg'"
+          >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text link="https://www.instagram.com/africadirecto/"
+                >Africa directo</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/briones-beer-day-2025'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
             [title]="'Donación y recogida de zapatillas deportivas Los Meandros de Briones'"
             [subtitle]="'04/2025 - Briones y Logroño (La Rioja)'"
             [imagePath]="'./assets/images/meandros-2025/meandros-2025-0.jpg'"
