@@ -89,6 +89,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./routed-modules/collection-2024/collection-2024.module').then((m) => m.Collection2024Module),
   },
+  {
+    path: 'meandros-2025',
+    loadChildren: () => import('./routed-modules/meandros-2025/meandros-2025.module').then((m) => m.Meandros2025Module),
+  },
 ];
 
 @NgModule({
