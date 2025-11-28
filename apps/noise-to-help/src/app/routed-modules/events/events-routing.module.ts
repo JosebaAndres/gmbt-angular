@@ -89,6 +89,17 @@ const routes: Routes = [
     loadChildren: () =>
       import('./routed-modules/collection-2024/collection-2024.module').then((m) => m.Collection2024Module),
   },
+  {
+    path: 'meandros-2025',
+    loadChildren: () => import('./routed-modules/meandros-2025/meandros-2025.module').then((m) => m.Meandros2025Module),
+  },
+  {
+    path: 'briones-beer-day-2025',
+    loadChildren: () =>
+      import('./routed-modules/briones-beer-day-2025/briones-beer-day-2025.module').then(
+        (m) => m.BrionesBeerDay2025Module,
+      ),
+  },
 ];
 
 @NgModule({
