@@ -100,6 +100,14 @@ const routes: Routes = [
         (m) => m.BrionesBeerDay2025Module,
       ),
   },
+  {
+    path: 'toys-2025',
+    loadChildren: () => import('./routed-modules/toys-2025/toys-2025.module').then((m) => m.Toys2025Module),
+  },
+  {
+    path: 'bass-2025',
+    loadChildren: () => import('./routed-modules/bass-2025/bass-2025.module').then((m) => m.Bass2025Module),
+  },
 ];
 
 @NgModule({

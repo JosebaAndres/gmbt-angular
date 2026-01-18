@@ -37,6 +37,50 @@
       <app-two-columns-layout-item>
         <gmbt-paragraph>
           <gmbt-card
+            [title]="'Sorteo de bajo eléctrico'"
+            [subtitle]="'12/2025 - Briones, Logroño (La Rioja)'"
+            [imagePath]="'./assets/images/bass-2025/bass-2025-0.jpg'"
+          >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text link="https://www.instagram.com/asociacionaaps/"
+                >Asociación de apoyo al pueblo Palestino (AAPS)</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/bass-2025'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
+            [title]="'Recogida benéfica de juguetes y material escolar 🎲📖'"
+            [subtitle]="'27-28/12/2025 - Briones (La Rioja)'"
+            [imagePath]="'./assets/images/toys-2025/toys-2025-0.jpg'"
+          >
+            <gmbt-paragraph>
+              <gmbt-alert type="info">Finalizado</gmbt-alert>
+            </gmbt-paragraph>
+            <gmbt-paragraph>Evento en apoyo a:</gmbt-paragraph>
+            <gmbt-list-item-paragraph
+              ><gmbt-external-link-text link="https://www.facebook.com/AsociacionAAPS"
+                >Asociación de Apoyo al Pueblo Sirio (AAPS)</gmbt-external-link-text
+              ></gmbt-list-item-paragraph
+            >
+            <gmbt-paragraph>
+              <a mat-raised-button color="accent" [routerLink]="'/events/toys-2025'">+ Info</a>
+            </gmbt-paragraph>
+          </gmbt-card>
+        </gmbt-paragraph>
+      </app-two-columns-layout-item>
+      <app-two-columns-layout-item>
+        <gmbt-paragraph>
+          <gmbt-card
             [title]="'Briones beer day'"
             [subtitle]="'12/07/2025 - Briones (La Rioja)'"
             [imagePath]="'./assets/images/briones-beer-day-2025/briones-beer-day-2025-0.jpg'"
