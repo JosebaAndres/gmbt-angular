@@ -108,6 +108,13 @@ const routes: Routes = [
     path: 'bass-2025',
     loadChildren: () => import('./routed-modules/bass-2025/bass-2025.module').then((m) => m.Bass2025Module),
   },
+  {
+    path: 'punk-rock-metal-history-briones',
+    loadChildren: () =>
+      import('./routed-modules/punk-rock-metal-history-briones/punk-rock-metal-history-briones.module').then(
+        (m) => m.PunkRockMetalHistoryBrionesModule,
+      ),
+  },
 ];
 
 @NgModule({

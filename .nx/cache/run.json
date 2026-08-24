@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve",
+    "startTime": "2026-08-24T17:09:08.270Z",
+    "endTime": "2026-08-24T17:10:33.034Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "noise-to-help:serve:development",
+      "target": "serve",
+      "projectName": "noise-to-help",
+      "hash": "10000429683949811350",
+      "startTime": "2026-08-24T17:09:08.331Z",
+      "endTime": "2026-08-24T17:10:32.950Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

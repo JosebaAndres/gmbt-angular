@@ -1,0 +1,2706 @@
+{
+  "version": "6.0",
+  "nxVersion": "23.1.1",
+  "pathMappings": {
+    "@gmbt-angular/components": ["libs/components/src/index.ts"]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "tools/generators/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "10340311248608412115"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".gcloudignore",
+        "hash": "1572575253673853071"
+      },
+      {
+        "file": "app.yaml",
+        "hash": "17699091340874581213"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "14309461888657174097"
+      },
+      {
+        "file": "README.md",
+        "hash": "16654826024898397002"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1742559913806133569"
+      },
+      {
+        "file": "package.json",
+        "hash": "6921713427062389552"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9483251403686547478"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "1031907106376631047"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3069074216761126282"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "11810713488198132402"
+      },
+      {
+        "file": "decorate-angular-cli.js",
+        "hash": "7532539535864604375"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "11218444020313697524"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "465559787189153348"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "17666962557300311861"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14501991441403825088"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "1867649394735759715"
+      }
+    ],
+    "projectFileMap": {
+      "components-documentation-e2e": [
+        {
+          "file": "apps/components-documentation-e2e/.eslintrc.json",
+          "hash": "10799368048025705622"
+        },
+        {
+          "file": "apps/components-documentation-e2e/cypress.config.ts",
+          "hash": "14925566057180716649"
+        },
+        {
+          "file": "apps/components-documentation-e2e/project.json",
+          "hash": "14706470447691386007"
+        },
+        {
+          "file": "apps/components-documentation-e2e/src/e2e/app.cy.ts",
+          "hash": "16081933261697663985"
+        },
+        {
+          "file": "apps/components-documentation-e2e/src/fixtures/example.json",
+          "hash": "17341819486505642070"
+        },
+        {
+          "file": "apps/components-documentation-e2e/src/support/app.po.ts",
+          "hash": "5364106453863571025"
+        },
+        {
+          "file": "apps/components-documentation-e2e/src/support/commands.ts",
+          "hash": "11031723810997510506"
+        },
+        {
+          "file": "apps/components-documentation-e2e/src/support/e2e.ts",
+          "hash": "15928825062325902088"
+        },
+        {
+          "file": "apps/components-documentation-e2e/tsconfig.json",
+          "hash": "7806042412912104422"
+        }
+      ],
+      "noise-to-help-e2e": [
+        {
+          "file": "apps/noise-to-help-e2e/.eslintrc.json",
+          "hash": "5570788962263802893"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/cypress.config.ts",
+          "hash": "14925566057180716649"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/project.json",
+          "hash": "18150931327350266342"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/src/e2e/app.cy.ts",
+          "hash": "12128385723250579247"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/src/fixtures/example.json",
+          "hash": "17341819486505642070"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/src/support/app.po.ts",
+          "hash": "5364106453863571025"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/src/support/commands.ts",
+          "hash": "11031723810997510506"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/src/support/e2e.ts",
+          "hash": "15928825062325902088"
+        },
+        {
+          "file": "apps/noise-to-help-e2e/tsconfig.json",
+          "hash": "7806042412912104422"
+        }
+      ],
+      "components": [
+        {
+          "file": "libs/components/.eslintrc.json",
+          "hash": "7324179122272207627"
+        },
+        {
+          "file": "libs/components/README.md",
+          "hash": "16147311865152420930"
+        },
+        {
+          "file": "libs/components/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/components/assets/.gitkeep copy",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/components/assets/documents/partners-form.pdf",
+          "hash": "15473512152211208054"
+        },
+        {
+          "file": "libs/components/assets/documents/pixel-2022/bases-ghosts-n-goblins-1985.pdf",
+          "hash": "13943642054740643401"
+        },
+        {
+          "file": "libs/components/assets/documents/pixel-2022/bases-street-fighter-ii-the-new-challengers-1993.pdf",
+          "hash": "7425014542220224402"
+        },
+        {
+          "file": "libs/components/assets/documents/pixel-2022/bases-super-pang-1990.pdf",
+          "hash": "5725974694085839453"
+        },
+        {
+          "file": "libs/components/assets/documents/t-shirt-noise-to-help-man-sizes.pdf",
+          "hash": "2321573062654765206"
+        },
+        {
+          "file": "libs/components/assets/documents/t-shirt-noise-to-help-woman-sizes.pdf",
+          "hash": "8323445346327986149"
+        },
+        {
+          "file": "libs/components/assets/images/aventum-2022/aventum-2022-0.jpg",
+          "hash": "14057765917980256805"
+        },
+        {
+          "file": "libs/components/assets/images/aventum-2022/aventum-2022-1.jpg",
+          "hash": "14054673599584546904"
+        },
+        {
+          "file": "libs/components/assets/images/banner.jpg",
+          "hash": "16848467032283743565"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-1.jpg",
+          "hash": "9987069404490605021"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-2.jpg",
+          "hash": "12464132728791988148"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-3.jpg",
+          "hash": "926321307815995294"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-4.jpg",
+          "hash": "1471048866006059409"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-5.jpg",
+          "hash": "15454809273686813653"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-6.jpg",
+          "hash": "3089603378117706341"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-7.jpg",
+          "hash": "301704477460111551"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021-8.jpg",
+          "hash": "10455513690373435073"
+        },
+        {
+          "file": "libs/components/assets/images/blanket-2021/blanket-2021.jpg",
+          "hash": "16296857766466015950"
+        },
+        {
+          "file": "libs/components/assets/images/briones-parties-2022/briones-parties-2022-0.jpg",
+          "hash": "4125444186181281400"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-1.jpg",
+          "hash": "1393988676637899799"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-10.jpg",
+          "hash": "11357032173534791934"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-11.jpg",
+          "hash": "1949840729376562185"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-12.jpg",
+          "hash": "5711463175711117000"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-2.jpg",
+          "hash": "2766417747127312768"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-3.jpg",
+          "hash": "585280889654602338"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-4.jpg",
+          "hash": "16488979627513787486"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-5.jpg",
+          "hash": "6877807453546758169"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-6.jpg",
+          "hash": "1871521894148675092"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-7.jpg",
+          "hash": "18071858210019846322"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-8.jpg",
+          "hash": "3040286083737170222"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020-9.jpg",
+          "hash": "17331980186252798928"
+        },
+        {
+          "file": "libs/components/assets/images/donate-toys-2020/donate-toys-2020.jpg",
+          "hash": "1799865453119780720"
+        },
+        {
+          "file": "libs/components/assets/images/facebook-logo.png",
+          "hash": "9209690608807956307"
+        },
+        {
+          "file": "libs/components/assets/images/instagram-logo.png",
+          "hash": "4696329637484133092"
+        },
+        {
+          "file": "libs/components/assets/images/layout-margin.png",
+          "hash": "10562307673937057799"
+        },
+        {
+          "file": "libs/components/assets/images/logo-1-50.png",
+          "hash": "11329756666659146999"
+        },
+        {
+          "file": "libs/components/assets/images/logo-2-200.png",
+          "hash": "4853286438512947733"
+        },
+        {
+          "file": "libs/components/assets/images/logo-CHICXS-200.png",
+          "hash": "3014405443354664302"
+        },
+        {
+          "file": "libs/components/assets/images/logo-asociacion-de-salud-mental-de-la-rioja-200.png",
+          "hash": "7112436566871917963"
+        },
+        {
+          "file": "libs/components/assets/images/logo-aventum-200.png",
+          "hash": "18237216809417538143"
+        },
+        {
+          "file": "libs/components/assets/images/logo-camisetas-ahora-200.png",
+          "hash": "17650351013249090114"
+        },
+        {
+          "file": "libs/components/assets/images/logo-ciclo-xxi-200.png",
+          "hash": "1352338049626301289"
+        },
+        {
+          "file": "libs/components/assets/images/logo-monociclos-com-0-200.png",
+          "hash": "4315853918549243264"
+        },
+        {
+          "file": "libs/components/assets/images/logo-monociclos-com-1-200.png",
+          "hash": "407951747031878917"
+        },
+        {
+          "file": "libs/components/assets/images/logo-sos-refugiados-200.png",
+          "hash": "7246412554601694943"
+        },
+        {
+          "file": "libs/components/assets/images/logo-ucrania-euskadi-200.png",
+          "hash": "5287964014544921482"
+        },
+        {
+          "file": "libs/components/assets/images/logo-vof-200.jpg",
+          "hash": "15196192557104248509"
+        },
+        {
+          "file": "libs/components/assets/images/main-t-shirt-noise-to-help.jpg",
+          "hash": "5653773569173523899"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-0.jpg",
+          "hash": "6301065068075390674"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-1.jpg",
+          "hash": "3149405399765221218"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-2.jpg",
+          "hash": "3338956719797414687"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-3.jpg",
+          "hash": "10915624513006780547"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-4.jpg",
+          "hash": "13034694418810373245"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-5.jpg",
+          "hash": "8194099212847196488"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-6.jpg",
+          "hash": "17840892112608217894"
+        },
+        {
+          "file": "libs/components/assets/images/meandros-2021/meandros-2021-7.jpg",
+          "hash": "7001458143859996965"
+        },
+        {
+          "file": "libs/components/assets/images/paypal-donate.png",
+          "hash": "6585196472837049250"
+        },
+        {
+          "file": "libs/components/assets/images/paypal-pay.png",
+          "hash": "4541517061454006910"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-0.jpg",
+          "hash": "13283477742987247978"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-1.jpg",
+          "hash": "11732597801738912769"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-2.jpg",
+          "hash": "11355596301548552403"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-3.jpg",
+          "hash": "5670887206793448366"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-4.jpg",
+          "hash": "8444670971094142278"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-5.jpg",
+          "hash": "7097800312433921335"
+        },
+        {
+          "file": "libs/components/assets/images/pixel-2022/pixel-2022-6.jpg",
+          "hash": "9031361361345126652"
+        },
+        {
+          "file": "libs/components/assets/images/sos-refugiados-2021/sos-refugiados-2021-0.jpg",
+          "hash": "3839407297777503922"
+        },
+        {
+          "file": "libs/components/assets/images/sos-refugiados-2021/sos-refugiados-2021-1.jpg",
+          "hash": "12193627452072002673"
+        },
+        {
+          "file": "libs/components/assets/images/sos-refugiados-2021/sos-refugiados-2021-2.jpg",
+          "hash": "9095418220073321384"
+        },
+        {
+          "file": "libs/components/assets/images/sos-refugiados-2021/sos-refugiados-2021-3.jpg",
+          "hash": "6105012018208062811"
+        },
+        {
+          "file": "libs/components/assets/images/t-shirt-noise-to-help.jpg",
+          "hash": "13525829894405191736"
+        },
+        {
+          "file": "libs/components/assets/images/unirioja-2022/unirioja-2022-0.jpg",
+          "hash": "10559921108569612452"
+        },
+        {
+          "file": "libs/components/assets/images/unirioja-2022/unirioja-2022-1.jpg",
+          "hash": "4866117307230773583"
+        },
+        {
+          "file": "libs/components/assets/svgs/arrow-left.svg",
+          "hash": "11587889230140961259"
+        },
+        {
+          "file": "libs/components/assets/svgs/arrow-right.svg",
+          "hash": "11221892219358400735"
+        },
+        {
+          "file": "libs/components/assets/svgs/facebook.svg",
+          "hash": "15085118617913873760"
+        },
+        {
+          "file": "libs/components/assets/svgs/hamburger.svg",
+          "hash": "17911943589996799676"
+        },
+        {
+          "file": "libs/components/assets/svgs/heart.svg",
+          "hash": "13535325414596152814"
+        },
+        {
+          "file": "libs/components/assets/svgs/instagram.svg",
+          "hash": "5523562941237251484"
+        },
+        {
+          "file": "libs/components/assets/svgs/mail.svg",
+          "hash": "4375059005906044317"
+        },
+        {
+          "file": "libs/components/jest.config.ts",
+          "hash": "17938155639502991958"
+        },
+        {
+          "file": "libs/components/ng-package.json",
+          "hash": "12470627314921608215"
+        },
+        {
+          "file": "libs/components/package.json",
+          "hash": "2178732740501583278",
+          "deps": ["npm:@angular/common", "npm:@angular/core", "npm:tslib"]
+        },
+        {
+          "file": "libs/components/project.json",
+          "hash": "822975026778873814"
+        },
+        {
+          "file": "libs/components/scss/components.scss",
+          "hash": "2024344657286941946"
+        },
+        {
+          "file": "libs/components/scss/generic.scss",
+          "hash": "9406149533869306772"
+        },
+        {
+          "file": "libs/components/scss/generic/angular-material.scss",
+          "hash": "15771269382768891557"
+        },
+        {
+          "file": "libs/components/scss/generic/body.scss",
+          "hash": "5244011985081999093"
+        },
+        {
+          "file": "libs/components/scss/generic/button.scss",
+          "hash": "9549843924700689384"
+        },
+        {
+          "file": "libs/components/scss/generic/hyperlink.scss",
+          "hash": "48949751743265007"
+        },
+        {
+          "file": "libs/components/scss/generic/reset.scss",
+          "hash": "11821632864764286745"
+        },
+        {
+          "file": "libs/components/scss/settings/angular-material.scss",
+          "hash": "14478279989276440475"
+        },
+        {
+          "file": "libs/components/scss/settings/colors.scss",
+          "hash": "1577607870188838659"
+        },
+        {
+          "file": "libs/components/scss/settings/margins.scss",
+          "hash": "7680269718184780414"
+        },
+        {
+          "file": "libs/components/scss/settings/sizes.scss",
+          "hash": "2539097635885112347"
+        },
+        {
+          "file": "libs/components/scss/settings/transitions.scss",
+          "hash": "7216695076331572448"
+        },
+        {
+          "file": "libs/components/scss/theming.scss",
+          "hash": "16789100398481774299"
+        },
+        {
+          "file": "libs/components/scss/trumps.scss",
+          "hash": "10760352005118402530"
+        },
+        {
+          "file": "libs/components/scss/trumps/trumps.scss",
+          "hash": "3590262324233057391"
+        },
+        {
+          "file": "libs/components/src/index.ts",
+          "hash": "14495171439970896086"
+        },
+        {
+          "file": "libs/components/src/lib/modules/alert/alert-component-type.ts",
+          "hash": "5025843410498608897"
+        },
+        {
+          "file": "libs/components/src/lib/modules/alert/alert.component.html",
+          "hash": "7082293810427591614"
+        },
+        {
+          "file": "libs/components/src/lib/modules/alert/alert.component.scss",
+          "hash": "2280317566293606148"
+        },
+        {
+          "file": "libs/components/src/lib/modules/alert/alert.component.ts",
+          "hash": "15201930415762011658"
+        },
+        {
+          "file": "libs/components/src/lib/modules/alert/alert.module.ts",
+          "hash": "2279666844136569978"
+        },
+        {
+          "file": "libs/components/src/lib/modules/button/button.component.html",
+          "hash": "12083594961704199064"
+        },
+        {
+          "file": "libs/components/src/lib/modules/button/button.component.scss",
+          "hash": "9361615938339754772"
+        },
+        {
+          "file": "libs/components/src/lib/modules/button/button.component.ts",
+          "hash": "16484839362084329029"
+        },
+        {
+          "file": "libs/components/src/lib/modules/button/button.module.ts",
+          "hash": "208594546712415638"
+        },
+        {
+          "file": "libs/components/src/lib/modules/card/card.component.html",
+          "hash": "7321868783965264350"
+        },
+        {
+          "file": "libs/components/src/lib/modules/card/card.component.scss",
+          "hash": "9850066041205035884"
+        },
+        {
+          "file": "libs/components/src/lib/modules/card/card.component.ts",
+          "hash": "15018213658139506019"
+        },
+        {
+          "file": "libs/components/src/lib/modules/card/card.module.ts",
+          "hash": "913421645970513725"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/carousel.module.ts",
+          "hash": "8823489113496895620"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel-dot.component.html",
+          "hash": "5455854726638924379"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel-dot.component.scss",
+          "hash": "14922297428977796405"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel-dot.component.ts",
+          "hash": "3481567577834828378"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel-dots.component.html",
+          "hash": "1806942633456506674"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel-dots.component.scss",
+          "hash": "13229495331497020592"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel-dots.component.ts",
+          "hash": "11385377186270568754"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel.component.html",
+          "hash": "10150707677178523666"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel.component.scss",
+          "hash": "15462642251005168313"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/components/carousel.component.ts",
+          "hash": "6582658513062308931"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/directives/carousel-item.directive.ts",
+          "hash": "17746333349520122702"
+        },
+        {
+          "file": "libs/components/src/lib/modules/carousel/services/carousel-service.ts",
+          "hash": "8771589853989083657"
+        },
+        {
+          "file": "libs/components/src/lib/modules/img/img.component.html",
+          "hash": "14724347268724396023"
+        },
+        {
+          "file": "libs/components/src/lib/modules/img/img.component.scss",
+          "hash": "9600754350133096691"
+        },
+        {
+          "file": "libs/components/src/lib/modules/img/img.component.ts",
+          "hash": "8828929087082057965"
+        },
+        {
+          "file": "libs/components/src/lib/modules/img/img.module.ts",
+          "hash": "640245965309666932"
+        },
+        {
+          "file": "libs/components/src/lib/modules/markup-renderer/markup-renderer.component.html",
+          "hash": "11128643745029280312"
+        },
+        {
+          "file": "libs/components/src/lib/modules/markup-renderer/markup-renderer.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/markup-renderer/markup-renderer.component.ts",
+          "hash": "7899505471967973261"
+        },
+        {
+          "file": "libs/components/src/lib/modules/markup-renderer/markup-renderer.module.ts",
+          "hash": "1447161243681036952"
+        },
+        {
+          "file": "libs/components/src/lib/modules/resize-observer/resize-observer.directive.ts",
+          "hash": "678341042883653518"
+        },
+        {
+          "file": "libs/components/src/lib/modules/resize-observer/resize-observer.module.ts",
+          "hash": "8368883660413699333"
+        },
+        {
+          "file": "libs/components/src/lib/modules/signature/signature.component.html",
+          "hash": "12330427691636914381"
+        },
+        {
+          "file": "libs/components/src/lib/modules/signature/signature.component.scss",
+          "hash": "8804894497074145389"
+        },
+        {
+          "file": "libs/components/src/lib/modules/signature/signature.component.ts",
+          "hash": "3946799106171788469"
+        },
+        {
+          "file": "libs/components/src/lib/modules/signature/signature.module.ts",
+          "hash": "17796083999941191398"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/divider-paragraph.component.html",
+          "hash": "9849964074392236379"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/divider-paragraph.component.scss",
+          "hash": "8497002080187099672"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/divider-paragraph.component.ts",
+          "hash": "11634551101198584203"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/download-link-text.component.html",
+          "hash": "1990843900466143844"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/download-link-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/download-link-text.component.ts",
+          "hash": "3055090883127992834"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/email-link-text.component.html",
+          "hash": "4456783335169993877"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/email-link-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/email-link-text.component.ts",
+          "hash": "6787116664429736582"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/encourage-text.component.html",
+          "hash": "5464570820346977718"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/encourage-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/encourage-text.component.ts",
+          "hash": "1750995028343393132"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/external-link-text.component.html",
+          "hash": "856424079640900924"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/external-link-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/external-link-text.component.ts",
+          "hash": "13309085264598592181"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/horizontal-divider.component.html",
+          "hash": "7472928114975171990"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/horizontal-divider.component.scss",
+          "hash": "2486139545892165936"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/horizontal-divider.component.ts",
+          "hash": "6410270259339260014"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/important-text.component.html",
+          "hash": "14147366104175709214"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/important-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/important-text.component.ts",
+          "hash": "266166225339757449"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/internal-link-text.component.html",
+          "hash": "5516463638439602252"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/internal-link-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/internal-link-text.component.ts",
+          "hash": "2650037364836440251"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/list-item-paragraph.component.html",
+          "hash": "9431028239536965021"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/list-item-paragraph.component.scss",
+          "hash": "11358937143297648573"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/list-item-paragraph.component.ts",
+          "hash": "5335301289225025588"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/paragraph-group.component.html",
+          "hash": "3955672302084117581"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/paragraph-group.component.scss",
+          "hash": "3876196642511343443"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/paragraph-group.component.ts",
+          "hash": "322723180267837689"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/paragraph.component.html",
+          "hash": "7258500471771061526"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/paragraph.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/paragraph.component.ts",
+          "hash": "11632079248721088351"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/subtitle-text.component.html",
+          "hash": "18260602489347737908"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/subtitle-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/subtitle-text.component.ts",
+          "hash": "16310562514300030309"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/title-text.component.html",
+          "hash": "1578399644883285882"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/title-text.component.scss",
+          "hash": "9282389308201828799"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/title-text.component.ts",
+          "hash": "10079464345451384858"
+        },
+        {
+          "file": "libs/components/src/lib/modules/typography/typography.module.ts",
+          "hash": "955483779153712416"
+        },
+        {
+          "file": "libs/components/src/lib/modules/view/view.component.html",
+          "hash": "7152941547690918191"
+        },
+        {
+          "file": "libs/components/src/lib/modules/view/view.component.scss",
+          "hash": "544151178315004320"
+        },
+        {
+          "file": "libs/components/src/lib/modules/view/view.component.ts",
+          "hash": "7529095225882799969"
+        },
+        {
+          "file": "libs/components/src/lib/modules/view/view.module.ts",
+          "hash": "1846485727382094471"
+        },
+        {
+          "file": "libs/components/src/test-setup.ts",
+          "hash": "9531801021999427605"
+        },
+        {
+          "file": "libs/components/tsconfig.json",
+          "hash": "6288192915562887729"
+        },
+        {
+          "file": "libs/components/tsconfig.lib.json",
+          "hash": "6495252486050873895"
+        },
+        {
+          "file": "libs/components/tsconfig.lib.prod.json",
+          "hash": "14596712293513988079"
+        },
+        {
+          "file": "libs/components/tsconfig.spec.json",
+          "hash": "8658740348867974260"
+        }
+      ],
+      "noise-to-help": [
+        {
+          "file": "apps/noise-to-help/.browserslistrc",
+          "hash": "9613746250742796726"
+        },
+        {
+          "file": "apps/noise-to-help/.eslintrc.json",
+          "hash": "6475878675360439213"
+        },
+        {
+          "file": "apps/noise-to-help/cloudbuild.yaml",
+          "hash": "15029835549579321463"
+        },
+        {
+          "file": "apps/noise-to-help/jest.config.ts",
+          "hash": "9635171663710727108"
+        },
+        {
+          "file": "apps/noise-to-help/project.json",
+          "hash": "11312012183810015938"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/app-routing.module.ts",
+          "hash": "15002860923047534152"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/app.component.html",
+          "hash": "8609058212015097949"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/app.component.spec.ts",
+          "hash": "8047277059304108757"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/app.component.ts",
+          "hash": "3996970704621482636"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/app.module.ts",
+          "hash": "15536915179216283776"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/data/logos.ts",
+          "hash": "18390753616381060633"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/device-type.ts",
+          "hash": "4630177715425213709"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/man-size-model.ts",
+          "hash": "5527783157452008275"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/media-query-alias.ts",
+          "hash": "13177867390662726863"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/menu-item-model.ts",
+          "hash": "7835288225457612229"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/number.ts",
+          "hash": "14319779882938353769"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/short-size-model.ts",
+          "hash": "6483124352529403980"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/signature-model.ts",
+          "hash": "15257729666658957109"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/models/woman-size-model.ts",
+          "hash": "8285994999108851356"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/centered-layout/centered-layout.component.html",
+          "hash": "3559393721507964534"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/centered-layout/centered-layout.component.scss",
+          "hash": "5380587147965206813"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/centered-layout/centered-layout.component.ts",
+          "hash": "3825074032442949020"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/centered-layout/centered-layout.module.ts",
+          "hash": "6601528483544519169"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/custom-icons/custom-icons.module.ts",
+          "hash": "649948125469334195"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-primary/navbar-primary.component.html",
+          "hash": "5322603888178123211"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-primary/navbar-primary.component.scss",
+          "hash": "14446745098189708913"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-primary/navbar-primary.component.ts",
+          "hash": "14657669858695867876"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-primary/navbar-primary.module.ts",
+          "hash": "1245985897944658842"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-secondary/navbar-secondary.component.html",
+          "hash": "2623652623223374725"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-secondary/navbar-secondary.component.scss",
+          "hash": "16616187745282260631"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-secondary/navbar-secondary.component.ts",
+          "hash": "911451924005843572"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/navbar-secondary/navbar-secondary.module.ts",
+          "hash": "652383544586374374"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/shell/shell.component.html",
+          "hash": "13787547574841065522"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/shell/shell.component.scss",
+          "hash": "5794613963248201697"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/shell/shell.component.ts",
+          "hash": "12596503136707197559"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/shell/shell.module.ts",
+          "hash": "14358178071808623494"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout-item.component.html",
+          "hash": "3940887307460332890"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout-item.component.scss",
+          "hash": "16865648370861613138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout-item.component.ts",
+          "hash": "11073481725182154268"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout.component.html",
+          "hash": "12629420613132250492"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout.component.scss",
+          "hash": "10785289797609467716"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout.component.ts",
+          "hash": "5527510428003703696"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/modules/two-columns-layout/two-columns-layout.module.ts",
+          "hash": "16395672297690039835"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/about-us/about-us-routing.module.ts",
+          "hash": "8138762320702230664"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/about-us/about-us.component.html",
+          "hash": "5220730608392505774"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/about-us/about-us.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/about-us/about-us.component.ts",
+          "hash": "7751982160291346172"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/about-us/about-us.module.ts",
+          "hash": "11516862275656322357"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/collaborate/collaborate-routing.module.ts",
+          "hash": "11665502177854132366"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/collaborate/collaborate.component.html",
+          "hash": "8855888304221081729"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/collaborate/collaborate.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/collaborate/collaborate.component.ts",
+          "hash": "1496830258054033878"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/collaborate/collaborate.module.ts",
+          "hash": "14129769205246800934"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contact/contact-routing.module.ts",
+          "hash": "18020984906028693020"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contact/contact.component.html",
+          "hash": "14204337394969812597"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contact/contact.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contact/contact.component.ts",
+          "hash": "5438051312247617523"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contact/contact.module.ts",
+          "hash": "14260731125198616359"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contributions/contributions-routing.module.ts",
+          "hash": "16889764929627704992"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contributions/contributions.component.html",
+          "hash": "4042832406003951399"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contributions/contributions.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contributions/contributions.component.ts",
+          "hash": "3351891805923345382"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/contributions/contributions.module.ts",
+          "hash": "6237365392607847583"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/events-routing.module.ts",
+          "hash": "9196284321025988014"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/events.module.ts",
+          "hash": "6913438302009526538"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/aventum-2022/aventum-2022-routing.module.ts",
+          "hash": "1615596062179819674"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/aventum-2022/aventum-2022.component.html",
+          "hash": "14682226779184884271"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/aventum-2022/aventum-2022.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/aventum-2022/aventum-2022.component.ts",
+          "hash": "14263673861450573672"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/aventum-2022/aventum-2022.module.ts",
+          "hash": "9739307094049450414"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/bass-2025/bass-2025-routing.module.ts",
+          "hash": "3369842265688737633"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/bass-2025/bass-2025.component.html",
+          "hash": "966217399799409451"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/bass-2025/bass-2025.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/bass-2025/bass-2025.component.ts",
+          "hash": "16010504354856395981"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/bass-2025/bass-2025.module.ts",
+          "hash": "9375211920722176205"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/blanket-2021/blanket-2021-routing.module.ts",
+          "hash": "953446996082733618"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/blanket-2021/blanket-2021.component.html",
+          "hash": "18101842616523305455"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/blanket-2021/blanket-2021.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/blanket-2021/blanket-2021.component.ts",
+          "hash": "14285663915953407559"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/blanket-2021/blanket-2021.module.ts",
+          "hash": "3985413659042378411"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2023/briones-beer-day-2023-routing.module.ts",
+          "hash": "10370893789817663358"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2023/briones-beer-day-2023.component.html",
+          "hash": "6610038303961107468"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2023/briones-beer-day-2023.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2023/briones-beer-day-2023.component.ts",
+          "hash": "18333152823351407992"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2023/briones-beer-day-2023.module.ts",
+          "hash": "5596288221904232818"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2024/briones-beer-day-2024-routing.module.ts",
+          "hash": "15255615344722864697"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2024/briones-beer-day-2024.component.html",
+          "hash": "5274605398985388250"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2024/briones-beer-day-2024.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2024/briones-beer-day-2024.component.ts",
+          "hash": "18310066388640842122"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2024/briones-beer-day-2024.module.ts",
+          "hash": "10285499597399100148"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2025/briones-beer-day-2025-routing.module.ts",
+          "hash": "17132406100189214532"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2025/briones-beer-day-2025.component.html",
+          "hash": "14813189457997102263"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2025/briones-beer-day-2025.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2025/briones-beer-day-2025.component.ts",
+          "hash": "14739335124192130923"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-beer-day-2025/briones-beer-day-2025.module.ts",
+          "hash": "17316489560246645085"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-parties-2022/briones-parties-2022-routing.module.ts",
+          "hash": "18434204595573114296"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-parties-2022/briones-parties-2022.component.html",
+          "hash": "10812651960691783108"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-parties-2022/briones-parties-2022.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-parties-2022/briones-parties-2022.component.ts",
+          "hash": "5134912439044938898"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/briones-parties-2022/briones-parties-2022.module.ts",
+          "hash": "8885001814504759862"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/collection-2024/collection-2024-routing.module.ts",
+          "hash": "750674644839884070"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/collection-2024/collection-2024.component.html",
+          "hash": "16908524221674202945"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/collection-2024/collection-2024.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/collection-2024/collection-2024.component.ts",
+          "hash": "1776836520749118825"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/collection-2024/collection-2024.module.ts",
+          "hash": "15138330078253958680"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/donate-toys-2020/donate-toys-2020-routing.module.ts",
+          "hash": "5628760941690930900"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/donate-toys-2020/donate-toys-2020.component.html",
+          "hash": "3858222617480496289"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/donate-toys-2020/donate-toys-2020.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/donate-toys-2020/donate-toys-2020.component.ts",
+          "hash": "3263551061800543603"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/donate-toys-2020/donate-toys-2020.module.ts",
+          "hash": "652859555068724407"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/drum-2024/drum-2024-routing.module.ts",
+          "hash": "772583363071765511"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/drum-2024/drum-2024.component.html",
+          "hash": "15491469441430753822"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/drum-2024/drum-2024.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/drum-2024/drum-2024.component.ts",
+          "hash": "13282172466885964312"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/drum-2024/drum-2024.module.ts",
+          "hash": "7355944708616016747"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/events/events-routing.module.ts",
+          "hash": "4049944798422691776"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/events/events.component.html",
+          "hash": "15864433307731370322"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/events/events.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/events/events.component.ts",
+          "hash": "15031000475253580448"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/events/events.module.ts",
+          "hash": "14035860690034632441"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/guitar-2023/guitar-2023-routing.module.ts",
+          "hash": "4339632921795285910"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/guitar-2023/guitar-2023.component.html",
+          "hash": "11956837388731258441"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/guitar-2023/guitar-2023.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/guitar-2023/guitar-2023.component.ts",
+          "hash": "14130689713331129529"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/guitar-2023/guitar-2023.module.ts",
+          "hash": "9580123976681628206"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2021/meandros-2021-routing.module.ts",
+          "hash": "8046465123412428413"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2021/meandros-2021.component.html",
+          "hash": "427411543214550422"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2021/meandros-2021.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2021/meandros-2021.component.ts",
+          "hash": "15691394719728790121"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2021/meandros-2021.module.ts",
+          "hash": "3396775591800794383"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2025/meandros-2025-routing.module.ts",
+          "hash": "1149412335100311523"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2025/meandros-2025.component.html",
+          "hash": "12206370085315099977"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2025/meandros-2025.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2025/meandros-2025.component.ts",
+          "hash": "16866304266748640959"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/meandros-2025/meandros-2025.module.ts",
+          "hash": "482418398046304335"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/pixel-2022/pixel-2022-routing.module.ts",
+          "hash": "17881872535163385227"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/pixel-2022/pixel-2022.component.html",
+          "hash": "5246919817578439470"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/pixel-2022/pixel-2022.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/pixel-2022/pixel-2022.component.ts",
+          "hash": "6670501021554961519"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/pixel-2022/pixel-2022.module.ts",
+          "hash": "13922262697812819087"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/solidary-concert-2023/solidary-concert-2023-routing.module.ts",
+          "hash": "12245353547778260978"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/solidary-concert-2023/solidary-concert-2023.component.html",
+          "hash": "17312280977296209380"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/solidary-concert-2023/solidary-concert-2023.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/solidary-concert-2023/solidary-concert-2023.component.ts",
+          "hash": "11263351446404608071"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/solidary-concert-2023/solidary-concert-2023.module.ts",
+          "hash": "1088466045138047631"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/sos-refugiados-2021/sos-refugiados-2021-routing.module.ts",
+          "hash": "8023131387798516714"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/sos-refugiados-2021/sos-refugiados-2021.component.html",
+          "hash": "9315471871012132736"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/sos-refugiados-2021/sos-refugiados-2021.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/sos-refugiados-2021/sos-refugiados-2021.component.ts",
+          "hash": "9012595748654836574"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/sos-refugiados-2021/sos-refugiados-2021.module.ts",
+          "hash": "12319287154779925246"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2023/toys-2023-routing.module.ts",
+          "hash": "15566044311560082984"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2023/toys-2023.component.html",
+          "hash": "14151925540506189985"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2023/toys-2023.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2023/toys-2023.component.ts",
+          "hash": "605795344609282356"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2023/toys-2023.module.ts",
+          "hash": "11399711881546878551"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2025/toys-2025-routing.module.ts",
+          "hash": "15450725229920139447"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2025/toys-2025.component.html",
+          "hash": "3277948331351107151"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2025/toys-2025.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2025/toys-2025.component.ts",
+          "hash": "4191012687973715293"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/toys-2025/toys-2025.module.ts",
+          "hash": "16778480559289389259"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2022/unirioja-2022-routing.module.ts",
+          "hash": "5279083985429330650"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2022/unirioja-2022.component.html",
+          "hash": "9079781301096056949"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2022/unirioja-2022.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2022/unirioja-2022.component.ts",
+          "hash": "3150985774754791484"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2022/unirioja-2022.module.ts",
+          "hash": "509164074074183339"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2023/unirioja-2023-routing.module.ts",
+          "hash": "15182187075326844765"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2023/unirioja-2023.component.html",
+          "hash": "7654639867451091527"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2023/unirioja-2023.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2023/unirioja-2023.component.ts",
+          "hash": "6153546933017555788"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2023/unirioja-2023.module.ts",
+          "hash": "4341347524960392722"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2024/unirioja-2024-routing.module.ts",
+          "hash": "9965982882024243803"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2024/unirioja-2024.component.html",
+          "hash": "5324589232078275006"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2024/unirioja-2024.component.scss",
+          "hash": "539876076006314989"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2024/unirioja-2024.component.ts",
+          "hash": "15286269904648948395"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/events/routed-modules/unirioja-2024/unirioja-2024.module.ts",
+          "hash": "11935580240395471674"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/main/main-routing.module.ts",
+          "hash": "16239291134066981697"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/main/main.component.html",
+          "hash": "1625695946236427946"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/main/main.component.scss",
+          "hash": "16865648370861613138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/main/main.component.ts",
+          "hash": "12113494201899695163"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/main/main.module.ts",
+          "hash": "3086140783900942143"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/merchandising/merchandising-routing.module.ts",
+          "hash": "11149208646906291354"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/merchandising/merchandising.component.html",
+          "hash": "9901237264322813084"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/merchandising/merchandising.component.scss",
+          "hash": "547766892707740400"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/merchandising/merchandising.component.ts",
+          "hash": "16491178340236130092"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/merchandising/merchandising.module.ts",
+          "hash": "15335920614927746722"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/partners/partners-routing.module.ts",
+          "hash": "4059733989216033032"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/partners/partners.component.html",
+          "hash": "17333784572566956902"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/partners/partners.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/partners/partners.component.ts",
+          "hash": "12937716529366895737"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/partners/partners.module.ts",
+          "hash": "12424198681806319928"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/questions/questions-routing.module.ts",
+          "hash": "5399919192356872343"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/questions/questions.component.html",
+          "hash": "4780324696000202801"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/questions/questions.component.scss",
+          "hash": "10419924856922068650"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/questions/questions.component.ts",
+          "hash": "11770623831359374525"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/routed-modules/questions/questions.module.ts",
+          "hash": "16185732694015679165"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/services/features-in-development-guard.ts",
+          "hash": "11771860758669055507"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/services/production-guard.ts",
+          "hash": "1966545968856451917"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/merchandising/merchandising-store-facade.ts",
+          "hash": "324820914582735431"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/merchandising/merchandising-store-key.ts",
+          "hash": "11969754033018094368"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/merchandising/merchandising-store-reducer.ts",
+          "hash": "4562407444489422862"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/merchandising/merchandising-store-selectors.ts",
+          "hash": "11821477402335412594"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/merchandising/merchandising-store-state.ts",
+          "hash": "9422379599135892933"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/merchandising/merchandising-store.module.ts",
+          "hash": "13730450298013131021"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-actions.ts",
+          "hash": "4387874481795824607"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-effects.ts",
+          "hash": "4556086919549139784"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-facade.ts",
+          "hash": "11477227937816971035"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-key.ts",
+          "hash": "15296837165123861393"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-reducer.ts",
+          "hash": "11109618221971526201"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-selectors.ts",
+          "hash": "18003949848415442839"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store-state.ts",
+          "hash": "11802498065391792781"
+        },
+        {
+          "file": "apps/noise-to-help/src/app/stores/ui/ui-store.module.ts",
+          "hash": "3011922323391547582"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/documents/partners-form.pdf",
+          "hash": "15473512152211208054"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/documents/pixel-2022/bases-ghosts-n-goblins-1985.pdf",
+          "hash": "13943642054740643401"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/documents/pixel-2022/bases-street-fighter-ii-the-new-challengers-1993.pdf",
+          "hash": "7425014542220224402"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/documents/pixel-2022/bases-super-pang-1990.pdf",
+          "hash": "5725974694085839453"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/documents/t-shirt-noise-to-help-man-sizes.pdf",
+          "hash": "2321573062654765206"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/documents/t-shirt-noise-to-help-woman-sizes.pdf",
+          "hash": "8323445346327986149"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/AHNA-2024/AHNA-2024-0.jpg",
+          "hash": "9752485690025174900"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/atim-2023/atim-2023-0.jpg",
+          "hash": "12783097939364907655"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/atim-2023/atim-2023-1.jpg",
+          "hash": "14615136972542728817"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/aventum-2022/aventum-2022-0.jpg",
+          "hash": "14057765917980256805"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/aventum-2022/aventum-2022-1.jpg",
+          "hash": "14054673599584546904"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/banner-partners.jpg",
+          "hash": "15183948799507960855"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/banner.jpg",
+          "hash": "16848467032283743565"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/bass-2025/bass-2025-0.jpg",
+          "hash": "6767487434856087120"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/bass-2025/bass-2025-1.jpg",
+          "hash": "7695917191260987643"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/bass-2025/bass-2025-2.jpg",
+          "hash": "5388533713485420201"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-1.jpg",
+          "hash": "9987069404490605021"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-2.jpg",
+          "hash": "12464132728791988148"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-3.jpg",
+          "hash": "926321307815995294"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-4.jpg",
+          "hash": "1471048866006059409"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-5.jpg",
+          "hash": "15454809273686813653"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-6.jpg",
+          "hash": "3089603378117706341"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-7.jpg",
+          "hash": "301704477460111551"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021-8.jpg",
+          "hash": "10455513690373435073"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/blanket-2021/blanket-2021.jpg",
+          "hash": "16296857766466015950"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-2023/books-2023-0.jpg",
+          "hash": "9630660436174841585"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-2023/books-2023-1.jpg",
+          "hash": "11996504544726678375"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-2023/books-2023-2.jpg",
+          "hash": "10732085206461490734"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-3-2025/books-3-2025-0.jpg",
+          "hash": "6390769803759562974"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-3-2025/books-3-2025-1.jpg",
+          "hash": "6662900375558969989"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-melior-2024/books-melior-2024-0.jpg",
+          "hash": "1342044030757819856"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-melior-2024/books-melior-2024-1.jpg",
+          "hash": "2383558997471924010"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-melior-2024/books-melior-2024-2.jpg",
+          "hash": "4434809349771331995"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-zaragoza-2024/books-zaragoza-2024-0.jpg",
+          "hash": "7119719755143354574"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/books-zaragoza-2024/books-zaragoza-2024-1.jpg",
+          "hash": "7067533888498712831"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2023/briones-beer-day-2023-0.jpg",
+          "hash": "948540288604985907"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2023/briones-beer-day-2023-1.jpg",
+          "hash": "1808224259313873180"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2023/briones-beer-day-2023-2.jpg",
+          "hash": "4471476443497358797"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2023/briones-beer-day-2023-3.jpg",
+          "hash": "4830316046714940498"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2023/briones-beer-day-2023-4.jpg",
+          "hash": "13493533491299006463"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2024/briones-beer-day-2024-0.jpg",
+          "hash": "8693163868831279992"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2024/briones-beer-day-2024-1.jpg",
+          "hash": "17824498606523087264"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2025/briones-beer-day-2025-0.jpg",
+          "hash": "11955712128717997672"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2025/briones-beer-day-2025-1.jpg",
+          "hash": "11373749287650765532"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-beer-day-2025/briones-beer-day-2025-2.jpg",
+          "hash": "11329060503847725393"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/briones-parties-2022/briones-parties-2022-0.jpg",
+          "hash": "4125444186181281400"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/clothes-1-2025/clothes-1-2025-0.jpg",
+          "hash": "17892830894187738240"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/collection-2024/collection-2024-0.jpg",
+          "hash": "17607642401843127949"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/collection-2024/collection-2024-1.jpg",
+          "hash": "14457140942220670295"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/collection-2024/collection-2024-2.jpg",
+          "hash": "1962735024955505479"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/collection-2024/collection-2024-3.jpg",
+          "hash": "17767613897448733826"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/collection-2024/collection-2024-4.jpg",
+          "hash": "12646460091492656305"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-1.jpg",
+          "hash": "1393988676637899799"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-10.jpg",
+          "hash": "11357032173534791934"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-11.jpg",
+          "hash": "1949840729376562185"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-12.jpg",
+          "hash": "5711463175711117000"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-2.jpg",
+          "hash": "2766417747127312768"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-3.jpg",
+          "hash": "585280889654602338"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-4.jpg",
+          "hash": "16488979627513787486"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-5.jpg",
+          "hash": "6877807453546758169"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-6.jpg",
+          "hash": "1871521894148675092"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-7.jpg",
+          "hash": "18071858210019846322"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-8.jpg",
+          "hash": "3040286083737170222"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020-9.jpg",
+          "hash": "17331980186252798928"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/donate-toys-2020/donate-toys-2020.jpg",
+          "hash": "1799865453119780720"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/drum-2024/drum-2024-0.jpg",
+          "hash": "12823310427498210037"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/drum-2024/drum-2024-1.jpg",
+          "hash": "5288781059324717925"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/drum-2024/drum-2024-2.jpg",
+          "hash": "4686848865597430358"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/erre_que_erre-2024/erre_que_erre-2024-0.jpg",
+          "hash": "1662300769946926323"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/erre_que_erre-2024/erre_que_erre-2024-1.jpg",
+          "hash": "10279165055090650526"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/facebook-logo.png",
+          "hash": "9209690608807956307"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/guitar-2023/guitar-2023-0.jpg",
+          "hash": "15857182272872318550"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/guitar-2023/guitar-2023-1.jpg",
+          "hash": "17738257019076435647"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/guitar-2023/guitar-2023-2.jpg",
+          "hash": "1028426830680395097"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/instagram-logo.png",
+          "hash": "4696329637484133092"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/layout-margin.png",
+          "hash": "10562307673937057799"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-1-50.png",
+          "hash": "11329756666659146999"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-2-200.png",
+          "hash": "4853286438512947733"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-CHICXS-200.png",
+          "hash": "3014405443354664302"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-asociacion-de-salud-mental-de-la-rioja-200.png",
+          "hash": "7112436566871917963"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-aventum-200.png",
+          "hash": "18237216809417538143"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-camisetas-ahora-200.png",
+          "hash": "17650351013249090114"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-ciclo-xxi-200.png",
+          "hash": "1352338049626301289"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-monociclos-com-0-200.png",
+          "hash": "4315853918549243264"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-monociclos-com-1-200.png",
+          "hash": "407951747031878917"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-sos-refugiados-200.png",
+          "hash": "7246412554601694943"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-ucrania-euskadi-200.png",
+          "hash": "5287964014544921482"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/logo-vof-200.jpg",
+          "hash": "15196192557104248509"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/main-t-shirt-noise-to-help.jpg",
+          "hash": "5653773569173523899"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-0.jpg",
+          "hash": "6301065068075390674"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-1.jpg",
+          "hash": "3149405399765221218"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-2.jpg",
+          "hash": "3338956719797414687"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-3.jpg",
+          "hash": "10915624513006780547"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-4.jpg",
+          "hash": "13034694418810373245"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-5.jpg",
+          "hash": "8194099212847196488"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-6.jpg",
+          "hash": "17840892112608217894"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2021/meandros-2021-7.jpg",
+          "hash": "7001458143859996965"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2025/meandros-2025-0.jpg",
+          "hash": "15107723702721027154"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2025/meandros-2025-1.jpg",
+          "hash": "16857002496407023548"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2025/meandros-2025-2.jpg",
+          "hash": "229152756840221975"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/meandros-2025/meandros-2025-3.jpg",
+          "hash": "12435848738155344639"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/paypal-donate.png",
+          "hash": "6585196472837049250"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-0.jpg",
+          "hash": "13283477742987247978"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-1.jpg",
+          "hash": "11732597801738912769"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-2.jpg",
+          "hash": "11355596301548552403"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-3.jpg",
+          "hash": "5670887206793448366"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-4.jpg",
+          "hash": "8444670971094142278"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-5.jpg",
+          "hash": "7097800312433921335"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/pixel-2022/pixel-2022-6.jpg",
+          "hash": "9031361361345126652"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/short-noise-to-help.jpg",
+          "hash": "8172011804182122475"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/solidary-concert-2023/solidary-concert-2023-0.jpg",
+          "hash": "11549730763591064756"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/solidary-concert-2023/solidary-concert-2023-1.jpg",
+          "hash": "1577413085108826200"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/solidary-concert-2023/solidary-concert-2023-2.jpg",
+          "hash": "9097138077309951865"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/solidary-concert-2023/solidary-concert-2023-3.jpg",
+          "hash": "17069745193212279500"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/solidary-concert-2023/solidary-concert-2023-4.jpg",
+          "hash": "6134283678531045920"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/sos-refugiados-2021/sos-refugiados-2021-0.jpg",
+          "hash": "3839407297777503922"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/sos-refugiados-2021/sos-refugiados-2021-1.jpg",
+          "hash": "12193627452072002673"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/sos-refugiados-2021/sos-refugiados-2021-2.jpg",
+          "hash": "9095418220073321384"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/sos-refugiados-2021/sos-refugiados-2021-3.jpg",
+          "hash": "6105012018208062811"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/t-shirt-noise-to-help.jpg",
+          "hash": "13525829894405191736"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/toys-2023/toys-2023-0.jpg",
+          "hash": "2296224311421569500"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/toys-2023/toys-2023-1.jpg",
+          "hash": "612184481248167511"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/toys-2025/toys-2025-0.jpg",
+          "hash": "6189104215560454203"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/toys-2025/toys-2025-1.jpg",
+          "hash": "11639783148885090785"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2022/unirioja-2022-0.jpg",
+          "hash": "10559921108569612452"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2022/unirioja-2022-1.jpg",
+          "hash": "4866117307230773583"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2023/unirioja-2023-0.jpg",
+          "hash": "14066736491715929469"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2023/unirioja-2023-1.jpg",
+          "hash": "15491155622766707503"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2024/unirioja-2024-0.jpg",
+          "hash": "3023028354639542230"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2024/unirioja-2024-1.jpg",
+          "hash": "17948808998940561981"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/images/unirioja-2024/unirioja-2024-2.jpg",
+          "hash": "8104646402377659811"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/arrow-left.svg",
+          "hash": "11587889230140961259"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/arrow-right.svg",
+          "hash": "11221892219358400735"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/facebook.svg",
+          "hash": "15085118617913873760"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/hamburger.svg",
+          "hash": "17911943589996799676"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/heart.svg",
+          "hash": "13535325414596152814"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/instagram.svg",
+          "hash": "5523562941237251484"
+        },
+        {
+          "file": "apps/noise-to-help/src/assets/svgs/mail.svg",
+          "hash": "4375059005906044317"
+        },
+        {
+          "file": "apps/noise-to-help/src/environments/environment.production.ts",
+          "hash": "12881379860274126149"
+        },
+        {
+          "file": "apps/noise-to-help/src/environments/environment.qa.ts",
+          "hash": "12881379860274126149"
+        },
+        {
+          "file": "apps/noise-to-help/src/environments/environment.ts",
+          "hash": "11235692350328451729"
+        },
+        {
+          "file": "apps/noise-to-help/src/favicon.ico",
+          "hash": "13291350743416975328"
+        },
+        {
+          "file": "apps/noise-to-help/src/index.html",
+          "hash": "13169509921327528427"
+        },
+        {
+          "file": "apps/noise-to-help/src/main.ts",
+          "hash": "12530990079120336302"
+        },
+        {
+          "file": "apps/noise-to-help/src/polyfills.ts",
+          "hash": "7176339394372785858"
+        },
+        {
+          "file": "apps/noise-to-help/src/styles.scss",
+          "hash": "15507083483693643891"
+        },
+        {
+          "file": "apps/noise-to-help/src/test-setup.ts",
+          "hash": "9531801021999427605"
+        },
+        {
+          "file": "apps/noise-to-help/tsconfig.app.json",
+          "hash": "5132087493240469016"
+        },
+        {
+          "file": "apps/noise-to-help/tsconfig.editor.json",
+          "hash": "11539145186223711902"
+        },
+        {
+          "file": "apps/noise-to-help/tsconfig.json",
+          "hash": "3639607200705369658"
+        },
+        {
+          "file": "apps/noise-to-help/tsconfig.spec.json",
+          "hash": "8658740348867974260"
+        }
+      ],
+      "components-documentation": [
+        {
+          "file": "apps/components-documentation/.browserslistrc",
+          "hash": "9613746250742796726"
+        },
+        {
+          "file": "apps/components-documentation/.eslintrc.json",
+          "hash": "6475878675360439213"
+        },
+        {
+          "file": "apps/components-documentation/jest.config.ts",
+          "hash": "18243716282505393331"
+        },
+        {
+          "file": "apps/components-documentation/project.json",
+          "hash": "1551700550179030168"
+        },
+        {
+          "file": "apps/components-documentation/src/app/app-routing.module.ts",
+          "hash": "11289126916692308912"
+        },
+        {
+          "file": "apps/components-documentation/src/app/app.component.html",
+          "hash": "6206842466752478362"
+        },
+        {
+          "file": "apps/components-documentation/src/app/app.component.scss",
+          "hash": "8777661997306967504"
+        },
+        {
+          "file": "apps/components-documentation/src/app/app.component.spec.ts",
+          "hash": "9088303626279177312"
+        },
+        {
+          "file": "apps/components-documentation/src/app/app.component.ts",
+          "hash": "18385628130714349933"
+        },
+        {
+          "file": "apps/components-documentation/src/app/app.module.ts",
+          "hash": "13321556102262049479"
+        },
+        {
+          "file": "apps/components-documentation/src/app/models/theme-model.ts",
+          "hash": "817755154799681544"
+        },
+        {
+          "file": "apps/components-documentation/src/app/modules/example/example.component.html",
+          "hash": "17838990781623359468"
+        },
+        {
+          "file": "apps/components-documentation/src/app/modules/example/example.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/modules/example/example.component.ts",
+          "hash": "182417866076428873"
+        },
+        {
+          "file": "apps/components-documentation/src/app/modules/example/example.module.ts",
+          "hash": "7346063290387837317"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/playground-routing.module.ts",
+          "hash": "13475388322950750365"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/playground.component.html",
+          "hash": "7929393043580790018"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/playground.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/playground.component.ts",
+          "hash": "17007038349966151914"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/playground.module.ts",
+          "hash": "16897252595397447689"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/alert/alert-routing.module.ts",
+          "hash": "11839472874008983809"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/alert/alert.component.html",
+          "hash": "11530924597529532542"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/alert/alert.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/alert/alert.component.ts",
+          "hash": "4771196247360371666"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/alert/alert.module.ts",
+          "hash": "161375749209759848"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/button/button-routing.module.ts",
+          "hash": "9261653789115974947"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/button/button.component.html",
+          "hash": "17844203700113991628"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/button/button.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/button/button.component.ts",
+          "hash": "16638908442931157621"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/button/button.module.ts",
+          "hash": "16565824388286783854"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/card/card-routing.module.ts",
+          "hash": "12499527371637931274"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/card/card.component.html",
+          "hash": "17820571789724371717"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/card/card.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/card/card.component.ts",
+          "hash": "9612138446126965626"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/card/card.module.ts",
+          "hash": "1317525687489531026"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/dashboard/dashboard-routing.module.ts",
+          "hash": "15503819650946512232"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/dashboard/dashboard.component.html",
+          "hash": "12673989439142238490"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/dashboard/dashboard.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/dashboard/dashboard.component.ts",
+          "hash": "9030885927979577080"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/dashboard/dashboard.module.ts",
+          "hash": "18286411599527278314"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/markup-renderer/markup-renderer-routing.module.ts",
+          "hash": "14744901495806443393"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/markup-renderer/markup-renderer.component.html",
+          "hash": "7837758697342502707"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/markup-renderer/markup-renderer.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/markup-renderer/markup-renderer.component.ts",
+          "hash": "10542164701240407115"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/markup-renderer/markup-renderer.module.ts",
+          "hash": "17999308829521323143"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/typography/typography-routing.module.ts",
+          "hash": "13636942761089410895"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/typography/typography.component.html",
+          "hash": "10942455075474753024"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/typography/typography.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/typography/typography.component.ts",
+          "hash": "15361435713436963404"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/typography/typography.module.ts",
+          "hash": "537373243368974649"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/view/view-routing.module.ts",
+          "hash": "6096721546144334794"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/view/view.component.html",
+          "hash": "4460536115609832584"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/view/view.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/view/view.component.ts",
+          "hash": "1492675918505265792"
+        },
+        {
+          "file": "apps/components-documentation/src/app/routed-modules/playground/routed-modules/view/view.module.ts",
+          "hash": "6971880630548042405"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-actions.ts",
+          "hash": "12548816129818522752"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-effects.ts",
+          "hash": "9165768602505950813"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-facade.ts",
+          "hash": "4980660966367508506"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-key.ts",
+          "hash": "1192881239365631338"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-reducer.ts",
+          "hash": "12018167548628963386"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-selectors.ts",
+          "hash": "4898734035911895926"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store-state.ts",
+          "hash": "15479161483569898781"
+        },
+        {
+          "file": "apps/components-documentation/src/app/stores/playground/playground-store.module.ts",
+          "hash": "16017969013251425161"
+        },
+        {
+          "file": "apps/components-documentation/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/components-documentation/src/environments/environment.prod.ts",
+          "hash": "3926102656993804675"
+        },
+        {
+          "file": "apps/components-documentation/src/environments/environment.ts",
+          "hash": "14521450534601418167"
+        },
+        {
+          "file": "apps/components-documentation/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/components-documentation/src/index.html",
+          "hash": "12343997922926009443"
+        },
+        {
+          "file": "apps/components-documentation/src/main.ts",
+          "hash": "12530990079120336302"
+        },
+        {
+          "file": "apps/components-documentation/src/polyfills.ts",
+          "hash": "7176339394372785858"
+        },
+        {
+          "file": "apps/components-documentation/src/styles.scss",
+          "hash": "15507083483693643891"
+        },
+        {
+          "file": "apps/components-documentation/src/test-setup.ts",
+          "hash": "9531801021999427605"
+        },
+        {
+          "file": "apps/components-documentation/tsconfig.app.json",
+          "hash": "5132087493240469016"
+        },
+        {
+          "file": "apps/components-documentation/tsconfig.editor.json",
+          "hash": "11539145186223711902"
+        },
+        {
+          "file": "apps/components-documentation/tsconfig.json",
+          "hash": "3639607200705369658"
+        },
+        {
+          "file": "apps/components-documentation/tsconfig.spec.json",
+          "hash": "8658740348867974260"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "1136635156850535573"
+}
